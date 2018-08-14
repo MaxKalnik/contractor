@@ -1,0 +1,134 @@
+.faqs
+  background: #f5fafc
+
+.faqs__wrapper
+  @extend .container
+  padding: 64px 0 134px 0
+
+  +respond-to($small)
+    padding: 32px 0 64px 0
+
+  +respond-to($xsmall)
+    padding: 32px 0 48px 0
+
+.faqs__title
+  font-size: 32px
+  line-height: 48px
+  font-weight: 700
+  color: #282828
+  margin-bottom: 48px
+  text-align: center
+
+  +respond-to($small)
+    margin-bottom: 32px
+
+  +respond-to($xsmall)
+    font-size: 26px
+    line-height: 32px
+    margin-bottom: 24px
+
+.faqs__items
+  background: #ffffff
+  box-shadow: 0 18px 32px 0 rgba(156,173,173,0.20)
+  border-radius: 6px
+  padding: 48px 48px 24px 48px
+
+  +respond-to($medium)
+    padding: 48px 48px 24px 48px
+
+  +respond-to($small)
+    padding: 32px 24px 8px 24px
+
+  +respond-to($xsmall)
+    padding: 24px 16px 0 16px
+
+.faqs__item
+  border-bottom: 1px solid rgba(#4c7b93, .15)
+  margin-bottom: 24px
+  position: relative
+  max-height 73px
+  overflow hidden
+  transition .35s ease-in
+
+  &:last-child
+    margin-bottom: 0
+    border-bottom: none
+
+  +respond-to($xsmall)
+    max-height 256px
+
+.faqs__item-header
+  font-family: 'Fira Sans', sans-serif
+  text-align left
+  display: block
+  margin-bottom 24px
+  position: relative
+  cursor: pointer
+  padding-right: 48px
+  &:after
+    content:""
+    width: 12px
+    height: 12px
+    position: absolute
+    top: 6px
+    right: 16px
+    background: url('images/icons/ic_expand.svg') center no-repeat
+
+  &:hover
+    .faqs__item-header-text
+      border-bottom: 1px solid transparent
+
+.faqs__item-header-text
+  position: relative
+  font-size: 18px
+  line-height: 24px
+  font-weight: 500
+  color: #188dfc
+  border-bottom: 1px dotted rgba(#188dfc, .2)
+  display: inline
+  cursor: pointer
+
+  +respond-to($xsmall)
+    font-size 16px
+    line-height 24px
+
+.faqs__item-text
+  font-size: 16px
+  line-height: 28px
+  font-weight: 400
+  color: #525f66
+  height auto
+  max-height 0
+  transition .25s
+  overflow hidden
+
+  &:after
+    display: block
+    min-height: 24px
+    max-height: 0
+    width: 100%
+
+  +respond-to($xsmall)
+    font-size 14px
+    line-height 24px
+
+.faqs__item--active
+  max-height 1000px
+  .faqs__item-header
+    &:after
+      transform: scale(-1)
+
+  .faqs__item-header-text
+    color: #293033
+    border-bottom: 1px solid transparent
+
+  .faqs__item-text
+    max-height: 1000px
+    padding-bottom 24px
+
+    &:after
+      max-height: 24px
+
+.faqs
+  .cb__main-content &
+    background #fff

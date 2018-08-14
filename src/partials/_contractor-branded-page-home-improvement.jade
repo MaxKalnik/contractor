@@ -1,0 +1,20 @@
+include ./_svg-mixins
+
+.cb-improvement
+  .cb-improvement__wrapper
+    h2.section__title
+      | Fast and simple home improvement loans, no home equity required
+
+    p.cb-improvement__undex-text
+      | Compare personalized options in 60 seconds 
+      span.semibold
+        | without affecting your credit score.
+
+    .cb-improvement__btn-wrapper
+      a.cb-improvementm__btn
+        +ic_lock_svg
+        | Get me to the Form
+
+      picture
+        source(media='(max-width: 1023px)', srcset="images/wont_affect_3_320.png, images/wont_affect_3_320@2x.png 2x")
+        img(src="images/wont_affect.png", srcset="images/wont_affect@2x.png 2x")

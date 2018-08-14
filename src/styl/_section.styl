@@ -1,0 +1,108 @@
+.section__title
+  font-size: 30px
+  line-height: 40px
+  font-weight: 700
+  color: #293033
+  text-align: center
+
+  +respond-to($small)
+    font-size 26px
+    line-height 32px
+
+.section__title--white
+  color: #ffffff
+
+.section__title--left-align
+  text-align left
+
+.section__title--expert
+  text-align: left
+  font-style italic
+  font-size 24px
+  line-height 40px
+
+  +respond-to($small)
+    font-size 20px
+    line-height 32px
+
+.section--main
+  background: #f5fafc
+
+.section__main-wrapper
+  @extend .container
+  padding: 30px 0 124px 0
+  display: flex
+  justify-content: space-between
+
+  +respond-to($medium)
+    padding-top: 46px
+
+  +respond-to($small)
+    padding-top: 64px
+    padding-bottom: 54px
+
+  +respond-to($xsmall)
+    flex-direction: column
+    padding-bottom: 44px
+
+.section--offers
+  background #f5fafc
+
+.section__offers-wrapper
+  @extend .container
+  padding: 0 0 112px 0
+  display: flex
+  flex-direction column
+
+  +respond-to($medium)
+    padding: 0 0 98px 0
+
+  +respond-to($small)
+    padding: 0 0 36px 0
+
+  +respond-to($xsmall)
+    padding: 0 0 32px 0
+
+.section__main-wrapper--partnership
+  padding: 64px 0 0 0
+
+  +respond-to($medium)
+    padding: 48px 0 0 0
+
+  +respond-to($small)
+    padding: 0 0 32px 0
+    flex-direction column
+
+.section__main-wrapper--affiliate
+  padding: 64px 0 0 0
+
+  +respond-to($medium)
+    padding: 48px 0 0 0
+
+  +respond-to($small)
+    padding: 0 0 44px 0
+    flex-direction column
+
+  +respond-to($xsmall)
+    padding: 0 0 32px 0
+
+.section__main-wrapper--login
+  display flex
+  flex-direction column
+  padding 80px 0 132px 0
+  width 640px
+  margin-left auto
+  margin-right auto
+
+  +respond-from($large)
+    width 840px
+
+  +respond-to($medium)
+    padding 80px 0 132px 0
+
+  +respond-to($small)
+    padding 64px 0 84px 0
+
+  +respond-to($xsmall)
+    width calc(100% - 32px)
+    padding 48px 0

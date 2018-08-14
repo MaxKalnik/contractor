@@ -1,0 +1,1095 @@
+.form
+  position: relative
+  margin-top: -122px
+
+  +respond-to($medium)
+    margin-top: -130px
+
+  +respond-to($small)
+    margin-top: -128px
+
+  +respond-to($xsmall)
+    margin-bottom: 44px
+
+.form--offers
+  margin-top: -82px
+  margin-bottom: 32px
+
+  +respond-to($medium)
+    margin-top: -84px
+
+  +respond-to($small)
+    margin-top: -80px
+
+  +respond-to($xsmall)
+    margin-top: -72px
+    margin-bottom: 24px
+
+.form--partnership
+  margin-top: -152px
+  margin-bottom: 41px
+
+  +respond-to($medium)
+    margin-top: -132px
+    margin-bottom: 48px
+
+  +respond-to($small)
+    margin-top: -80px
+    margin-bottom: 32px
+
+  +respond-to($xsmall)
+    margin-top: -80px
+    margin-bottom: 24px
+
+.form--affiliate
+  margin-top: -152px
+  margin-bottom: 111px
+
+  +respond-to($medium)
+    margin-top: -132px
+    margin-bottom: 118px
+
+  +respond-to($small)
+    margin-top: -80px
+    margin-bottom: 48px
+
+  +respond-to($xsmall)
+    margin-top: -80px
+    margin-bottom: 24px
+
+.form--lender
+  margin-top: -122px
+  margin-bottom: 111px
+
+  +respond-to($medium)
+    margin-top: -105px
+    margin-bottom: 118px
+
+  +respond-to($small)
+    margin-top: -75px
+    margin-bottom: 60px
+
+  +respond-to($xsmall)
+    margin-top: -75px
+    margin-bottom: 32px
+
+.form--contact
+  margin-top: -176px
+  margin-bottom: 111px
+
+  +respond-to($medium)
+    margin-top: -175px
+    margin-bottom: 148px
+
+  +respond-to($small)
+    margin-top: -75px
+    margin-bottom: 32px
+
+  +respond-to($xsmall)
+    margin-top: -75px
+    margin-bottom: 24px
+
+.form--login
+  margin-top 0
+  margin-bottom 48px
+
+  +respond-to($medium)
+    margin-top: 0
+    margin-bottom 48px
+
+  +respond-to($small)
+    margin-top: 0
+    margin-bottom 48px
+
+  +respond-to($xsmall)
+    margin-top: 0
+    margin-bottom 48px
+
+.form__fieldset
+  position: relative
+  width: 848px
+  background: #fff
+  box-shadow: 0 18px 32px 0 rgba(156,173,173,0.20)
+  border-radius: 6px
+  margin-bottom: 40px
+  padding: 32px
+  box-sizing: border-box
+  &:last-of-type
+    margin-bottom: 0
+
+  +respond-to($medium)
+    width 644px
+
+  +respond-to($small)
+    width 480px
+    padding: 32px 24px 24px 24px
+
+  +respond-to($xsmall)
+    width 100%
+    padding 24px
+
+.form__fieldset--info
+  padding-bottom: 40px
+
+  +respond-to($xsmall)
+    padding-bottom: 64px
+
+.form__fieldset--your-info
+  padding-bottom 8px
+
+  +respond-to($medium)
+    padding-bottom 32px
+
+  +respond-to($small)
+    padding-bottom 24px
+
+.form__fieldset--full
+  width 100%
+
+.form__fieldset--offers
+  padding 24px 32px 32px 32px
+
+  +respond-to($xsmall)
+    padding-bottom 64px
+
+  .form__fieldset-input-wrapper
+    margin-bottom 0
+
+    +respond-to($xsmall)
+      margin-bottom 32px
+      &:last-child
+        margin-bottom 0
+
+  .form__fieldset-label
+    font-size 14px
+    line-height 24px
+
+.form__fieldset--partnership
+  padding-bottom 48px
+
+  +respond-to($small)
+    padding-bottom 32px
+    width 100%
+
+  +respond-to($xsmall)
+    padding-bottom 24px
+
+.form__fieldset--affiliate
+  padding-bottom 48px
+
+  +respond-to($small)
+    padding-bottom 32px
+    width 100%
+
+  +respond-to($xsmall)
+    padding-bottom 24px
+
+.form__fieldset--lender
+  padding-bottom 48px
+
+  +respond-to($small)
+    padding-bottom 32px
+
+    width 100%
+
+  +respond-to($xsmall)
+    padding-bottom 24px
+
+.form__fieldset--contact
+  padding-bottom 48px
+
+  +respond-to($small)
+    padding-bottom 32px
+    width 100%
+
+  +respond-to($xsmall)
+    padding-bottom 24px
+
+.form__fieldset--login
+  padding: 48px 64px 64px 64px
+  display flex
+  flex-direction column
+  align-items center
+  width 100%
+
+  +respond-to($medium)
+    padding: 48px 64px 64px 64px
+
+  +respond-to($small)
+    padding: 48px 64px 64px 64px
+
+  +respond-to($xsmall)
+    padding: 24px 16px
+
+.form__login-icon
+  width 44px
+  height 44px
+  margin-bottom 32px
+
+  +respond-to($xsmall)
+    margin-bottom 24px
+
+.form__fieldset-wrapper
+  width 100%
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-between
+  align-items flex-end
+
+.form__fieldset-input-wrapper
+  position relative
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  margin-bottom: 30px
+  justify-content flex-end
+
+  &:last-child
+    margin-bottom: 0
+
+  .form__fieldset--your-info &
+    margin-bottom 30px
+    +respond-to($medium)
+      &:last-child
+        margin-bottom 0
+
+.form__fieldset-input-wrapper--full
+  width: 100%
+
+.form__fieldset-input-wrapper--half
+  width: calc(50% - 16px)
+
+  +respond-to($medium)
+    width: 100%
+
+    .form__fieldset--partnership &,
+    .form__fieldset--affiliate &,
+    .form__fieldset--lender &,
+    .form__fieldset--contact &
+      +respond-to($medium)
+        width: calc(50% - 12px)
+
+      +respond-to($xsmall)
+        width: 100%
+
+.form__fieldset-input-wrapper--offers-loan
+  width calc(35% - 21px)
+  box-sizing border-box
+
+  +respond-to($small)
+    width calc(35% - 16px)
+
+  +respond-to($xsmall)
+    width 100%
+
+.form__fieldset-input-wrapper--offers-income
+  width calc(35% - 21px)
+  box-sizing border-box
+
+  +respond-to($small)
+    width calc(35% - 16px)
+
+  +respond-to($xsmall)
+    width 100%
+
+.form__fieldset-input-wrapper--offers-score
+  width calc(30% - 21px)
+  box-sizing border-box
+
+  +respond-to($small)
+    width calc(30% - 16px)
+
+  +respond-to($xsmall)
+    width 100%
+
+.form__fieldset-input-wrapper--checkbox
+  margin-bottom 32px
+
+  +respond-to($small)
+    margin-bottom 24px
+
+  +respond-to($xsmall)
+    margin-bottom 16px
+
+.form__fieldset-ad-btn-wrapper
+  position: absolute
+  right: 32px
+  top: 32px
+  z-index 1
+
+  +respond-to($small)
+    right 24px
+    top: 24px
+
+  +respond-to($xsmall)
+    top auto
+    bottom: 24px
+    right auto
+    left: 50%
+    transform: translateX(-50%)
+    min-width 155px
+
+#ad-icon
+  transition .25s
+
+.form__fieldset-ad-btn
+  padding-left: 24px
+  background: none
+  font-size: 12px
+  line-height: 16px
+  font-weight: 400
+  color: #8fa7b3
+  border: none
+  outline: none
+  cursor: pointer
+  transition .25s
+
+  +respond-to($xsmall)
+    min-width 155px
+
+  &:hover
+    color: #E2E8EB
+
+    #ad-icon
+      fill #E2E8EB
+
+.form__fieldset-ad-icon
+  width: 16px
+  height: 16px
+  position: absolute
+  left: 0
+  top: 2px
+
+.form__fieldset-ad-btn-text-container
+  position absolute
+  top 28px
+  right 0
+  width 294px
+  background: #ffffff
+  border: 1px solid rgba(143,167,179,0.30)
+  box-shadow: 0 4px 10px 0 rgba(143,167,179,0.10)
+  border-radius: 4px
+  padding 32px 24px
+  box-sizing border-box
+
+  +respond-to($xsmall)
+    width 288px
+    padding 16px
+
+.form__fieldset-ad-btn-close
+  position absolute
+  right 12px
+  top 12px
+  width 16px
+  height 16px
+  &:before
+    position: absolute
+    left: 0
+    top: 7px
+    content: ''
+    height: 2px
+    width: 16px
+    background: #d8d8d8
+    transform: rotate(45deg)
+    box-shadow: none
+    transition: transform .25s
+    opacity: 1
+
+  &:after
+    position: absolute
+    left: 0
+    top: 7px
+    content: ''
+    height: 2px
+    width: 16px
+    background: #d8d8d8
+    transform: rotate(-45deg)
+    box-shadow: none
+    transition: transform .25s
+
+.form__fieldset-ad-btn-text
+  font-size: 14px
+  color: #525F66
+  letter-spacing: 0
+  line-height: 24px
+  font-weight 400
+
+.form__fieldset-ad-btn-text-container--hidden
+  display none
+
+.form__fieldset-title
+  position: relative
+  font-size: 30px
+  line-height: 48px
+  font-weight: 700
+  color: #282828
+  margin-bottom: 32px
+  padding-left: 59px
+
+  +respond-to($small)
+    font-size: 24px
+    line-height: 32px
+    margin-bottom 24px
+
+.form__fieldset-title--center
+  text-align center
+
+.form__fieldset-upper-text
+  width 100%
+  font-weight 400
+  font-size: 18px
+  color: #525F66
+  line-height: 32px
+  margin-bottom 32px
+  box-sizing border-box
+
+  .form--login &
+    font-size 16px
+    line-height 28px
+    +respond-to($xsmall)
+      font-size 14px
+      line-height 24px
+
+  +respond-to($small)
+    margin-bottom 24px
+    line-height 28px
+
+  +respond-to($xsmall)
+    margin-bottom 32px
+    line-height 24px
+    font-size 16px
+    line-height 24px
+
+.form__fieldset-upper-text--center
+  text-align center
+
+.form__fieldset-title--small
+  padding-left 0
+  font-size 18px
+  line-height 24px
+  font-weight 500
+  color #293033
+  margin-bottom 16px
+
+.form__fieldset-title--no-icon
+  padding-left 0
+
+  +respond-to($small)
+    margin-bottom 24px
+
+  +respond-to($xsmall)
+    margin-bottom 16px
+
+.form__fieldset-title-icon
+  position: absolute
+  left: 0
+  top: 50%
+  transform: translateY(-50%)
+
+.form__fieldset-input
+  position: relative
+  width: 100%
+  min-height 48px
+  padding: 10px 16px 12px 16px
+  font-size: 14px
+  font-weight: 400
+  line-height: 24px
+  color: #293033
+  border: 1px solid #dde4e8
+  border-radius: 3px
+  box-sizing: border-box
+  &:focus
+    border: 1px solid #a8d5ff
+
+::placeholder
+  color: #BCBFC1
+
+.form__fieldset-input-warning
+  @extend .input-warning-message
+
+.form__fieldset-input--invalid
+  border: 1px solid #de4b4b
+  margin-bottom: 0
+  &:focus
+    border: 1px solid #de4b4b
+
+  & + .form__fieldset-input-warning
+    display: inline-block
+
+.form__fieldset-input-range
+  width: 100%
+  padding: 10px 16px 12px 16px
+  font-size: 18px
+  font-weight: 500
+  line-height: 24px
+  color: #293033
+  border: 1px solid #dde4e8
+  border-radius: 3px 3px 0 0
+  border-bottom: none
+  box-sizing: border-box
+
+.form__fieldset-select
+  width: 100%
+
+.form__fieldset-label
+  width 100%
+  position relative
+  font-size: 16px
+  line-height: 24px
+  font-weight: 400
+  color: #293033
+  margin-bottom: 8px
+  box-sizing border-box
+
+.form__fieldset-label--with-hint
+  position relative
+  padding-right 19px
+
+.form__fieldset-label-hint-btn
+  display inline-block
+  width 12px
+  height 12px
+  position relative
+  background url('images/svg/ic_question.svg') center no-repeat
+  cursor pointer
+  top 1px
+
+.form__fieldset-hint
+  position absolute
+  width 160px
+  display none
+  padding 16px
+  color #616e75
+  border-radius 6px
+  background #fff
+  font-size 12px
+  line-height 20px
+  font-weight 400
+  box-shadow: 0 20px 40px 0 rgba(0,0,0,0.10)
+  border-radius: 5px
+  cursor: pointer
+  z-index: 2
+  bottom: calc(100% + 8px)
+  right: 50%;
+  transform: translate(50%)
+  &:after
+    content: ''
+    position: absolute
+    bottom: -7px
+    left: 50%
+    transform: translate(-50%)
+    width: 0
+    height: 0
+    border-left: 7px solid transparent
+    border-right: 7px solid transparent
+    border-top: 7px solid $color-white
+
+  +respond-to($xsmall)
+    width 90px
+
+.form__fieldset-hint--open
+    display block
+
+.form__fieldset-hint-wrapper
+  position relative
+  display inline-block
+  margin-left 8px
+
+.form__fieldset-label--checkbox
+  width 100%
+  position: relative
+  font-size: 14px
+  line-height: 24px
+  font-weight: 400
+  color: #293033
+  padding-left: 34px
+  margin-bottom: 0
+  cursor: pointer
+  box-sizing border-box
+
+.form__fieldset-checkmark
+  position: absolute
+  left: 0
+  top: -1px
+  width 24px
+  height 24px
+  border: 1px solid #dce3e7
+  border-radius: 3px
+  &:hover
+    background-color #f5fcf5
+    border: 1px solid rgba(#68ba62, .5)
+
+  &:focus
+    border: 1px solid rgba(#68ba62, .5)
+
+  &--disabled
+    border: 1px solid #dce3e7
+
+    &:hover
+      background-color #fff
+      border: 1px solid #dce3e7
+
+    &:focus
+      background-color #fff
+      border: 1px solid #dce3e7
+
+.form__fieldset-label-link
+  @extend .link
+
+.form__fieldset-checkbox
+  position: absolute
+  width: 0
+  height: 0
+  visibility: hidden
+  opacity: 0
+  cursor: pointer
+
+.form__fieldset-checkbox:checked + .form__fieldset-checkmark
+  background-color #f5fcf5
+  background-image: url('images/svg/checkmark_green.svg')
+  background-position center
+  background-repeat no-repeat
+  border: 1px solid #17b548
+
+.form__fieldset-checkbox:checked + .form__fieldset-checkmark--disabled
+  background-color #fff
+  background-image: none
+  background-position center
+  background-repeat no-repeat
+  border: 1px solid #dce3e7
+
+.form__submit-btn
+  outline: none
+  @extend .btn-with-lock
+  width: 100%
+  border: none
+  font-family: inherit
+
+  // &:focus
+  //   outline 2px solid #83BFFC
+
+  +respond-to($xsmall)
+    padding 16px 20px
+
+  .form--login &
+    padding 16px
+    margin-top 32px
+
+    +respond-to($xsmall)
+      margin-top 24px
+
+.form__terms-of-use
+  font-size: 12px
+  line-height: 20px
+  font-weight: 400
+  color: #8A9499
+  margin-top: 16px
+
+.form__terms-of-use-link
+  @extend .link
+  &:after
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 0
+    height: 1px
+    background: transparent
+    width: 100%
+    transition: .25s
+
+  &:hover
+    &:after
+      background: #8CC6FE
+
+.form__under-text
+  font-size 14px
+  line-height 22px
+  color #525F66
+  font-weight 400
+  padding-left 24px
+  position relative
+  margin-top: 24px
+  &:before
+    content: ''
+    position absolute
+    left 0
+    top 2px
+    width 16px
+    height 16px
+    background url('images/svg/ic_lock_under_text.svg') center no-repeat
+
+.form__under-text-link
+  @extend .link
+
+.form__fieldset-input--textarea
+  font-family: 'Fira Sans', sans-serif
+  height 144px
+
+.form__upper-icon-wrapper
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.form__fieldset-btn-file
+  @extend .green-btn-filled
+  padding 10px
+  border-radius 0 3px 3px 0
+  width 45%
+  height 48px
+  box-sizing border-box
+  +respond-to(375px)
+    width 57%
+
+  &:focus
+    border: 1px solid #089936
+
+.form__file-wrapper
+  display flex
+  width 100%
+
+.form__fieldset-input--file
+  display none
+
+.form__fieldset-input--file-path
+  border-radius 3px 0 0 3px
+  width 55%
+  border-right none
+
+  +respond-to(375px)
+    width 55%
+
+  &:focus
+    border: 1px solid #dde4e8
+
+.form__fieldset-label--radio
+  position: relative
+  font-size: 14px
+  line-height: 24px
+  font-weight: 400
+  color: #293033
+  padding-left: 34px
+  margin-bottom: 0
+  cursor: pointer
+  margin-bottom 24px
+  &:last-child
+    margin-bottom 0
+
+.form__fieldset-checkmark-radio
+  position: absolute
+  left: 0
+  top: -1px
+  width 24px
+  height 24px
+  border: 1px solid #dce3e7
+  border-radius: 50%
+  &:hover
+    background-color #f5fcf5
+    border: 1px solid rgba(#68ba62, .5)
+
+  &:focus
+    border: 1px solid rgba(#68ba62, .5)
+
+  &--disabled
+    border: 1px solid #dce3e7
+
+    &:hover
+      background-color #fff
+      border: 1px solid #dce3e7
+
+    &:focus
+      background-color #fff
+      border: 1px solid #dce3e7
+
+  .form__fieldset-label--radio-contractor &
+    left 16px
+    top 16px
+
+.form__fieldset-radio
+  position: absolute
+  width: 0
+  height: 0
+  visibility: hidden
+  opacity: 0
+  cursor: pointer
+
+.form__fieldset-radio:checked + .form__fieldset-checkmark-radio
+  border: 1px solid #17b548
+  &:after
+    content ''
+    position absolute
+    top 6px
+    left 6px
+    width 12px
+    height 12px
+    background #17B548
+    border-radius 50%
+
+.form__fieldset-radio:checked + .form__fieldset-checkmark-radio--disabled
+  border: 1px solid #dce3e7
+  &:after
+    display none
+
+.form__fieldset-sub-title
+  @extend .form__fieldset-label
+  font-weight 600
+  margin-top 10px
+
+.form__fieldset-text
+  @extend .form__fieldset-label
+  font-size 14px
+  line-height 24px
+  margin-bottom 24px
+
+.form__fieldset-label--radio-contractor
+  background: #ffffff
+  border: 1px solid #dde4e8
+  box-shadow: 0 10px 31px 0 rgba(156,173,173,0.20)
+  border-radius: 4px
+  padding 16px 16px 16px 58px
+
+  +respond-to($small)
+    padding 16px 16px 16px 58px
+
+  +respond-to($xsmall)
+    padding 16px 16px 16px 58px
+
+  a
+    @extend .link
+    line-height 16px
+    border-bottom: 1px solid #8cc6fe
+
+.form__fieldset-label--radio-contractor-active
+  border: 1px solid #AEDAAB
+
+.form__fieldset-title-img-container
+  display inline-block
+  width 200px
+  box-sizing border-box
+  padding 21px 27px 20px 29px
+  border-radius 6px
+  background: #fff
+  box-shadow: 0 10px 18px 0 rgba(0,104,255,0.10)
+  position absolute
+  top -43px
+
+  +respond-to($xsmall)
+    position relative
+    margin-right auto
+    margin-left auto
+    top 0
+    margin-top -65px
+    margin-bottom 24px
+
+.form__fieldset-title.form__fieldset-title--logo-xl
+  padding-left 232px
+  margin-bottom 8px
+  width 100%
+  box-sizing border-box
+
+  +respond-to($xsmall)
+    padding-left 0
+    text-align center
+
+.form__fieldset-contacts
+  position absolute
+  top: -32px
+  left: 264px
+
+  +respond-to($xsmall)
+    position static
+    margin 16px 0 32px 0
+
+.form__fieldset-contacts-link
+  padding-left 27px
+  position relative
+  font-size: 14px
+  color: #FFFFFF
+  letter-spacing: 0.7px
+  line-height: 16px
+  font-weight 500
+  margin-right 44px
+
+  +respond-to($xsmall)
+    color #046DD5
+    margin-right 12px
+    padding-left 20px
+    &:last-child
+      margin-right 0
+
+  &:before
+    content ''
+    position absolute
+    left 0
+    top 0
+    width 16px
+    height 16px
+    background url(images/svg/ic_phone_upper.svg) center no-repeat
+
+    +respond-to($xsmall)
+      background url(images/svg/ic_phone_blue.svg) center no-repeat
+
+.form__fieldset-contacts-link--contact-us
+  +respond-to($xsmall)
+    display inline-block
+    border-bottom 1px dotted rgba(4, 109, 213, .3)
+    padding-left 0
+    margin-left 20px
+    transition .25s
+    &:hover
+      border-bottom 1px dotted transparent
+
+  &:before
+    background url(images/svg/ic_envelop.svg) center no-repeat
+
+    +respond-to($xsmall)
+      left -20px
+      background url(images/svg/ic_envelop_blue.svg) center no-repeat
+
+
+.form__fieldset-steps
+  margin-left 232px
+  display flex
+  margin-bottom 44px
+
+  +respond-to($small)
+    display flex
+    flex-direction column
+
+  +respond-to($xsmall)
+    margin-left 0
+
+.form__fieldset-step
+  position relative
+  padding-left 24px
+  font-size: 16px
+  color: #4C7B93
+  line-height: 24px
+  font-weight 500
+  margin-right 32px
+  max-width 100%
+  box-sizing border-box
+
+  +respond-to($xsmall)
+    margin-right 0
+
+  &:last-child
+    margin-right 0
+
+  &:before
+    content ''
+    position absolute
+    left 0
+    top 4px
+    width 16px
+    height 16px
+    border-radius 50%
+    background url(images/svg/ic_1.svg)
+    color #fff
+
+  &:nth-child(2)
+    &:before
+      background url(images/svg/ic_2.svg)
+
+  &:nth-child(3)
+    &:before
+      background url(images/svg/ic_3.svg)
+
+
+.form__fieldset-btn-wrapper
+  position relative
+  width: 556px
+  margin: 0 auto
+  margin-top 44px
+
+  +respond-to($medium)
+    width 288px
+
+  +respond-to($xsmall)
+    width 100%
+
+  img
+    @extend .btn-with-lock-img
+    top 0
+    right -180px
+
+    +respond-to($medium)
+      top: 0
+
+    +respond-to($xsmall)
+      top: 80px
+
+.form__fieldset-btn
+  @extend .btn-with-lock
+  display: inline-block
+  padding: 16px 76px
+
+  +respond-to($medium)
+    padding 16px
+
+  +respond-to($xsmall)
+    margin-bottom 140px
+
+.form__fieldset--contractor-branded
+  padding 24px 32px 44px 32px
+
+  +respond-to($medium)
+    padding 32px 32px 36px 32px
+
+  +respond-to($small)
+    padding 36px 24px 64px 24px
+
+  +respond-to($xsmall)
+    display flex
+    flex-direction column
+    padding 16px 16px 64px 16px
+
+  .form__fieldset-ad-btn-wrapper
+    +respond-to($medium)
+      top 12px
+
+  .form__fieldset-input-wrapper
+    margin-bottom 0
+
+    +respond-to($xsmall)
+      margin-bottom 32px
+      &:last-child
+        margin-bottom 0
+
+  .form__fieldset-label
+    font-size 14px
+    line-height 24px
+
+.form--contractor-branded
+  @extend .container
+  margin-top: -82px
+  margin-bottom: 32px
+  background: #fff
+  box-shadow: 0 23px 28px 0 rgba(0,104,255,0.10)
+  border-radius: 6px
+
+  +respond-to($medium)
+    margin-top: -84px
+
+  +respond-to($small)
+    margin-top: -80px
+
+  +respond-to($xsmall)
+    margin-top: -72px
+    margin-bottom: 24px
+
+  .form__fieldset-step
+    margin-bottom 8px
+    &:last-child
+      margin-bottom 0
+
+  .form__fieldset-ad-btn-wrapper
+    top 8px
+    +respond-to($xsmall)
+      bottom 24px
+      top auto
+
+form.form--cb-bg
+  background #F5FAFC
+
+

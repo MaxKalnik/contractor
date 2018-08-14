@@ -1,0 +1,90 @@
+include ./_svg-mixins
+
+form.form.form--contractor-branded(action='', method='POST')
+  fieldset.form__fieldset.form__fieldset--full.form__fieldset--contractor-branded
+    .form__fieldset-title-img-container
+      img(src="images/dawson.png", srcset="images/dawson@2x.png 2x", alt="Dawson")
+
+    h2.form__fieldset-title.form__fieldset-title--logo-xl
+      | Dawson Foundation Repair Finacing
+
+    .form__fieldset-contacts
+      a.form__fieldset-contacts-link.form__fieldset-contacts-link--tel(href="tel:1-800-900-9664")
+        | 1-800-900-9664
+
+      a.form__fieldset-contacts-link.form__fieldset-contacts-link--contact-us(href="mailto:Support@Enhancify.com")
+        | Contact Us
+
+    ul.form__fieldset-steps
+      li.form__fieldset-step
+        | Enter Basic Information
+
+      li.form__fieldset-step
+        | Choose & Apply to the Lendre
+
+      li.form__fieldset-step
+        | Get Funded!
+
+    .form__fieldset-ad-btn-wrapper
+      button.form__fieldset-ad-btn(type='button', tabindex="0")
+        +ad_btn_icon
+        | Advertiser Disclosure
+
+      .form__fieldset-ad-btn-text-container.form__fieldset-ad-btn-text-container--hidden
+        button.form__fieldset-ad-btn-close(type='button', tabindex="0")
+        p.form__fieldset-ad-btn-text
+          | Enhancify.com is an independent website that is supported by advertising. Enhancify.com may be compensated by bank issuers whose offers appear on the site. Because we are paid by our advertising partners it may impact placement of products on the site, including the order in which they appear. Not all available credit card issuers or card offers are included on the site.
+
+    .form__fieldset-wrapper
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--offers-loan
+        label.form__fieldset-label.form__fieldset-label--with-hint(for='loan-amount')
+          | Loan Amount Requested
+
+          .form__fieldset-hint-wrapper
+            button.form__fieldset-label-hint-btn(type='button')
+
+            span.form__fieldset-hint
+              | Some useful information
+
+        .range
+          input.form__fieldset-input-range.range__input(name='loan-amount')
+          input.range__slider(data-from="2000", data-max="61000", data-min="1000", data-step="100")
+
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--offers-income
+        label.form__fieldset-label(for='email')
+          | Email Address
+
+          .form__fieldset-hint-wrapper
+            button.form__fieldset-label-hint-btn(type='button')
+
+            span.form__fieldset-hint
+              | Some useful information about annual income
+
+        input.form__fieldset-input.form__fieldset-label--with-hint(type='email', id='email' name='email', placeholder='example@mail.com')
+        .form__fieldset-input-warning
+          | Invalid email
+
+
+      .form__fieldset-input-wrapper.form__fieldset-input-wrapper--offers-score
+        label.form__fieldset-label.form__fieldset-label--with-hint(for='credit-score')
+          | Credit Score
+
+          .form__fieldset-hint-wrapper
+            button.form__fieldset-label-hint-btn(type='button')
+
+            span.form__fieldset-hint
+              | Some useful information about credit score
+
+        select.form__fieldset-select(name='credit-score')
+          option(value='1' selected) Good (680 - 719)
+          option(value='2') Excellent
+          option(value='3') Normal
+          option(value='4') Bad
+
+    .form__fieldset-btn-wrapper
+      button.form__fieldset-btn
+        | Fund my Project Now!
+
+      picture
+        source(media='(max-width: 767px)', srcset="images/wont_affect_3_320.png, images/wont_affect_3_320@2x.png 2x")
+        img(src="images/wont_affect_3.png", srcset="images/wont_affect_3@2x.png 2x")

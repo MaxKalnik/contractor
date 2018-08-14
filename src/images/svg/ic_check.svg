@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="9px" viewBox="0 0 12 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_check</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Contractor-Branded-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Contractor_Branded_Page_1024" transform="translate(-44.000000, -1092.000000)">
+            <g id="Why-Join" transform="translate(44.000000, 822.000000)">
+                <g id="Group-13" transform="translate(0.000000, 184.000000)">
+                    <g id="1">
+                        <g id="checks" transform="translate(0.000000, 12.000000)">
+                            <g id="ic_check" transform="translate(0.000000, 72.000000)">
+                                <rect id="Rectangle" x="0" y="0" width="12" height="12"></rect>
+                                <path d="M11.8242629,2.17948364 C11.5899585,1.94017212 11.210084,1.94017212 10.9757327,2.17948364 L3.78736647,9.52080382 L1.02427609,6.69894805 C0.789971692,6.45963652 0.410097156,6.45966046 0.175745879,6.69894805 C-0.0585819597,6.93823563 -0.0585819597,7.32618934 0.175745879,7.56550086 L3.36310136,10.8205971 C3.59733545,11.0598847 3.97749124,11.0597172 4.21163158,10.8205971 L11.8242629,3.04606039 C12.0585907,2.80677281 12.0585673,2.41879516 11.8242629,2.17948364 Z" id="Shape" fill="#17B548" fill-rule="nonzero"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,393 @@
+.tel-btn
+  position: relative
+  padding-left: 28px
+  color: #282828
+  font-size: 14px
+  line-height: 24px
+  font-weight: 300
+  cursor: pointer
+  &:before
+    content: ''
+    width: 16px
+    height: 16px
+    position: absolute
+    top: 0
+    left: 0
+    background: url('images/icons/ic_phone.svg') center no-repeat
+
+.green-btn
+  border: 1px solid #68ba62
+  padding: 11px 32px
+  font-size: 14px
+  line-height: 24px
+  font-weight: 600
+  color: #68ba62
+  border-radius: 3px
+  cursor: pointer
+  transition: .25s
+  text-align: center
+  &:hover
+    background: #0ACC48
+    border: 1px solid transparent
+    color: #ffffff
+
+  &:active,
+  &--active
+    background: #17B548
+    border: 1px solid transparent
+    color: #ffffff
+
+  &--disabled
+    color: #B8C5CC
+    border: 1px solid #B8C5CC
+    background: #F5FAFC
+    &:active,
+    &--active,
+    &:hover
+      color: #B8C5CC
+      border: 1px solid #B8C5CC
+      background: #F5FAFC
+
+.green-btn-filled
+  border: 1px solid #AEDAAB
+  padding: 12px 32px
+  font-size: 14px
+  line-height: 24px
+  font-weight: 600
+  color: #17B548
+  border-radius: 3px
+  background: #f5fcf5
+  transition: .25s
+  cursor: pointer
+  &:hover
+    border: 1px solid #17B548
+
+  &:active
+    border: 1px solid #089936
+    background: #E8F5F2
+
+  &--active
+    border: 1px solid #089936
+    background: #E8F5F2
+
+  &--disabled
+    color: #F1F7F9
+    border: 1px solid #B8C5CC
+    background: #F5FAFC
+    &:hover
+      border: 1px solid #B8C5CC
+
+    &:active
+      border: 1px solid #B8C5CC
+      background: #F5FAFC
+
+.btn-with-lock
+  width: 100%
+  display inline-block
+  box-sizing: border-box
+  position: relative
+  background: #17B548
+  color: #ffffff
+  font-size: 18px
+  line-height: 32px
+  font-weight: 700
+  padding: 16px 64px
+  border-radius: 4px
+  cursor: pointer
+  text-align: center
+  transition: .25s
+
+  +respond-to($xsmall)
+    width: 100%
+    padding: 16px 68px
+
+  svg
+    margin-right: 10px
+    position: relative
+    top: 1px
+
+  &:hover
+    background #0ACC48
+
+  &:active
+    background: #17B548
+
+  &--active
+    background: #17B548
+
+  &--disabled
+    color: #DAE2E6
+    background: #B8C5CC
+    #lock-svg-main
+      fill: #CED8DD
+    &:hover,
+    &:active,
+    &--active
+      background: #B8C5CC
+
+.btn-with-lock-img
+  position: absolute
+  right: -170px
+  top: 25px
+
+  +respond-to($xsmall)
+    left: 50%
+    transform translateX(-50%)
+    top: 75px
+
+.btn-medium
+  @extend .btn-with-lock
+  padding-top 12px
+  padding-bottom 12px
+
+.main-text
+  font-size: 16px
+  line-height: 28px
+  font-weight: 400
+
+.equalize
+  position: relative
+  top -1px
+
+text-custom(color1, color2)
+  padding 12px 24px
+  color: #fff
+  font-size: 18px
+  line-height: 28px
+  background-image: color1
+  border-radius: 6px
+  a
+    background: color2
+    color: #fff
+    padding: 2px 4px
+    border-radius: 4px
+    font-weight: 500
+
+  +respond-to($small)
+    padding: 12px 16px
+
+  +respond-to($xsmall)
+    font-size: 16px
+    line-height: 24px
+
+.btn-custom
+  padding 15px 60px
+  display inline-block
+  font-weight 700
+  font-size: 14px
+  color: #fff
+  line-height: 16px
+  border 1px solid rgba(#fff, .5)
+  border-radius 3px
+  transition .25s
+  &:hover
+    background-color #fff
+    color #359fea
+    #btn-arrow-right
+      fill #359fea
+
+  .btn-right-arrow
+    display inline-block
+    margin-left 8px
+    position relative
+    top -1px
+
+  #btn-arrow-right
+    transition .25s
+
+.green-btn-filled
+  display inline-block
+  font-weight 700
+  font-size: 14px
+  color: #17B548
+  line-height: 24px
+  padding 16px 48px
+  background-color #f5fcf5
+  border 1px solid rgba(#68BA62, .5)
+  text-align center
+  &:hover
+    border 1px solid #17B548
+
+  &:active
+    background-color: #E8F5F2
+    border 1px solid #17B548
+
+  &--active
+    background-color: #E8F5F2
+    border 1px solid #17B548
+
+  &--disabled
+    color: #B8C5CC
+    border: 1px solid #B8C5CC
+    background: #F5FAFC
+    &:hover,
+    &:active,
+    &--active
+      color: #B8C5CC
+      border: 1px solid #B8C5CC
+      background: #F5FAFC
+
+  +respond-to($xsmall)
+    padding 8px 51px
+
+.popup
+  display none
+  position fixed
+  top 0
+  left 0
+  width 100%
+  height 100%
+  background-color rgba(#293033 .9)
+  z-index 4
+
+  .popup__wrapper
+    position fixed
+    width 720px
+    height 536px
+    box-sizing border-box
+    display flex
+    position relative
+    flex-direction column
+    left 50%
+    top 50%
+    transform translate(-50%, -50%)
+    border-radius 6px
+
+    +respond-to($xsmall)
+      width calc(100% - 32px)
+      box-sizing border-box
+
+  .popup__close-btn
+    position: absolute
+    display: block
+    width 16px
+    height 16px
+    top: 16px
+    right: 16px
+    z-index: 3
+    &:before
+      position: absolute
+      left: 0
+      top: 7px
+      content: ''
+      height: 2px
+      width: 18px
+      background: #fff
+      transform: rotate(45deg)
+      box-shadow: none
+      transition: transform .25s
+      opacity: 1
+
+    &:after
+      position: absolute
+      left: 0
+      top: 7px
+      content: ''
+      height: 2px
+      width: 18px
+      background: #fff
+      transform: rotate(-45deg)
+      box-shadow: none
+      transition: transform .25s
+
+  .popup__congrats
+    padding 48px 64px
+    background-image: linear-gradient(-90deg, #17B548 0%, #06CF46 99%)
+    border-radius: 6px 6px 0 0
+
+    +respond-to($xsmall)
+      padding 32px 24px 24px 24px
+
+  .popup__congrats-title
+    font-weight 700
+    font-size: 48px
+    color: #fff
+    letter-spacing: 0
+    text-align: center
+    line-height: 64px
+    text-shadow: 0 1px 2px rgba(15,85,150,0.10)
+    margin-bottom 16px
+
+    +respond-to($xsmall)
+      font-size 34px
+      line-height 44px
+      margin-bottom 8px
+
+  .popup__congrats-text
+    font-weight 400
+    font-size: 18px
+    color: #fff
+    text-align: center
+    line-height: 32px
+    text-shadow: 0 1px 2px rgba(15,85,150,0.10)
+
+    +respond-to($xsmall)
+      font-size 16px
+      line-height 28px
+
+  .popup__content
+    background-color #fff
+    padding 32px 48px 48px 48px
+    display flex
+    flex-direction column
+    align-items center
+    border-radius: 0 0 6px 6px
+
+    +respond-to($xsmall)
+      padding 24px
+
+  .popup__content-text
+    font-weight 400
+    font-size: 18px
+    color: #525F66
+    line-height: 32px
+    margin-bottom 32px
+
+    +respond-to($xsmall)
+      font-size 16px
+      line-height 28px
+
+  .popup__btn
+    @extend .green-btn-filled
+    padding 15px 47px
+    text-align center
+
+    +respond-to($xsmall)
+      padding 15px
+      width 100%
+
+.input-warning-message
+  display: none
+  position: absolute
+  max-width: 100%
+  align-self: center
+  padding: 2px 16px
+  background: #fae2e2
+  border-radius: 3px
+  font-size: 12px
+  color: #de4b4b
+  line-height: 16px
+  bottom: -26px
+  box-sizing: border-box
+  text-align: center
+  font-weight 400
+  &:before
+    content: ''
+    position: absolute
+    top: -5px
+    width: 0
+    height: 0
+    border-left: 5px solid transparent
+    border-right: 5px solid transparent
+    border-bottom: 10px solid #fae2e2
+    left: 50%
+    transform: translateX(-50%)
+
+.under-text
+  font-size: 16px
+  color: #525F66
+  text-align: center
+  line-height: 32px
+  font-weight 400
+  width 100%
+  box-sizing border-box

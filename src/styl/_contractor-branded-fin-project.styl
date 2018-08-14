@@ -1,0 +1,100 @@
+.financing-project
+  background #fff
+  .cb__main-content--offers &
+    border-bottom 1px solid #BAE5F0
+
+.financing-project__wrapper
+  @extend .container
+  padding 80px 0 50px 0
+
+  +respond-to($small)
+    padding 64px 0 30px 0
+
+  +respond-to($xsmall)
+    padding 44px 0 28px 0
+
+.financing-project__under-text
+  @extend .under-text
+  margin 32px 0 48px 0
+
+  +respond-to($small)
+    margin 24px 0 32px 0
+
+  +respond-to($xsmall)
+    margin 16px 0 24px 0
+
+.contractor-branded-svg
+  width 96px
+  height 96px
+  flex-shrink 0
+
+.financing-project__item-list
+  display: flex
+  flex-wrap: wrap
+  margin-top: 48px
+
+  +respond-to($small)
+    margin-top 32px
+
+  +respond-to($xsmall)
+    width: 440px
+    margin-left: auto
+    margin-right: auto
+    margin-top 24px
+
+  +respond-to(490px)
+    width: 290px
+
+  +respond-to($xxsmall)
+    width: 100%
+
+.financing-project__item
+  display: flex
+  width: 264px
+  min-height: 176px
+  flex-direction: column
+  align-items: center
+  justify-content: flex-start
+  padding: 24px
+  border: 1px solid #E9EDF0
+  border-radius: 3px
+  transition: .25s
+  box-sizing: border-box
+  margin-right: 28px
+  margin-bottom: 32px
+
+  +respond-from($large)
+    width 318px
+
+  +respond-from($small)
+    &:nth-child(4n)
+      margin-right: 0
+
+  +respond-to($medium)
+    width: 222px
+    margin-right: 16px
+
+  +respond-to($small)
+    width: 164px
+    padding 24px 16px
+
+  +respond-range(490px, $xsmall)
+    margin-bottom: 16px
+    width: 136px
+    &:nth-child(3n)
+      margin-right: 0
+
+  +respond-to(490px)
+    margin-bottom: 16px
+    width: 136px
+    &:nth-child(2n)
+      margin-right: 0
+
+.financing-project__item-text
+  font-size: 16px
+  color: #525F66
+  text-align: center
+  line-height: 24px
+  font-weight 500
+  margin-top 8px
+

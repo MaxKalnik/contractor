@@ -1,0 +1,67 @@
+body
+  font-family: 'Fira Sans', sans-serif
+  -webkit-text-size-adjust: 100%
+  $ultraThin()
+
+ul, li
+  list-style: none
+
+fieldset
+  padding: 0
+  margin: 0
+  outline: none
+  border: none
+
+a
+  cursor pointer
+  // &:focus
+  //   outline 2px solid #83bffc
+
+input
+  outline none
+  box-shadow none
+  margin 0
+
+button
+  font-family: 'Fira Sans', sans-serif
+  outline none
+  border none
+  background none
+  cursor pointer
+  padding 0
+  margin 0
+  -webkit-appearance: none
+
+.container
+  width: 1140px
+  margin: 0 auto
+  box-sizing: border-box
+
+  +respond-from($large)
+    width: 1360px
+
+  +respond-to($medium)
+    width: 936px
+
+  +respond-to($small)
+    width: 720px
+
+  +respond-to($xsmall)
+    width: calc(100% - 32px)
+
+.link
+  position: relative
+  color: #188DFC
+  cursor pointer
+  line-height 16px
+  border-bottom 1px solid #8CC6FE
+  transition: .25s
+
+  &:hover
+    border-bottom 1px solid transparent
+
+.semibold
+  font-weight: 600
+
+.cb__main-content--offers
+  background #F5FAFC

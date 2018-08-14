@@ -1,0 +1,57 @@
+.cb-improvement
+  padding 80px 0
+  border-bottom 1px solid #BAE5F0
+
+  +respond-to($small)
+    padding 64px 0
+
+  +respond-to($xsmall)
+    padding 44px 0
+
+.cb-improvement__wrapper
+  @extend .container
+  padding-bottom 80px
+
+  +respond-to($small)
+    padding-bottom 0
+
+.cb-improvement__undex-text
+  @extend .under-text
+  margin 32px 0 48px 0
+
+.cb-improvement__btn-wrapper
+  position relative
+  width: 360px
+  margin: 0 auto
+  margin-top 44px
+
+  +respond-to($xsmall)
+    width 100%
+
+  img
+    @extend .btn-with-lock-img
+    top 15px
+    right -190px
+
+    +respond-to($medium)
+      top: 15px
+
+    +respond-to($small)
+      top 80px
+      right 50%
+      transform translateX(50%)
+
+    +respond-to($xsmall)
+      right 50%
+      transform translateX(-50%)
+
+.cb-improvementm__btn
+  @extend .btn-with-lock
+  display: inline-block
+  padding: 12px 76px
+
+  +respond-to($medium)
+    padding 12px
+
+  +respond-to($small)
+    margin-bottom 140px

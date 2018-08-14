@@ -1,0 +1,120 @@
+.cb-steps
+  border-bottom 1px solid #BAE5F0
+
+.cb-steps__wrapper
+  @extend .container
+  background #fff
+  padding 80px 0
+
+  +respond-to($small)
+    padding 64px 0
+
+  +respond-to($xsmall)
+    padding 44px 0
+
+.cb-steps__under-text
+  @extend .under-text
+  margin 32px auto 48px auto
+  max-width 760px
+
+  +respond-to($small)
+    margin 24px auto 32px auto
+
+  +respond-to($xsmall)
+    margin 16px auto 24px auto
+
+.cb-steps__step
+  width 946px
+  display flex
+  flex-direction column
+  position relative
+  padding 44px
+  padding-left 162px
+  background #fff
+  box-shadow: 0 23px 28px 0 rgba(0,104,255,0.10)
+  border-radius: 2px
+  margin-bottom 48px
+  margin-left auto
+  box-sizing border-box
+
+  +respond-to($medium)
+    width 900px
+    padding 32px 24px 44px 144px
+
+  +respond-to($small)
+    width 686px
+    padding 32px 24px 44px 144px
+
+  +respond-to($xsmall)
+    width 100%
+    padding 12px 12px 16px 12px
+
+  &:last-child
+    margin-bottom 0
+
+  .contractor-branded-svg
+    position absolute
+    left 44px
+    top 50%
+    transform translateY(-50%)
+
+    +respond-to($small)
+      left 24px
+
+    +respond-to($xsmall)
+      position static
+      width 96px
+      transform none
+      margin 0 auto 16px auto
+
+.cb-steps__step-header
+  font-size: 20px
+  color: #525F66
+  letter-spacing: 0
+  line-height: 32px
+  font-weight 700
+  margin-bottom 12px
+  width 100%
+  box-sizing border-box
+
+.cb-steps__step-text
+  font-size: 18px
+  color: #525F66
+  letter-spacing: 0
+  line-height: 32px
+  font-weight 400
+  width 100%
+  box-sizing border-box
+
+.cb-steps__step-label
+  position absolute
+  font-size: 14px
+  width 47px
+  color: #538097
+  letter-spacing: 0.78px
+  text-align: center
+  line-height: 26px
+  font-weight 700
+  transform rotate(-90deg)
+  transform-origin left
+  left -24px
+  text-transform uppercase
+
+  +respond-to($medium)
+    left -22px
+
+  +respond-to($small)
+    left -18px
+
+  +respond-to($xsmall)
+    left 12px
+    top 12px
+    transform none
+
+
+
+
+
+
+
+

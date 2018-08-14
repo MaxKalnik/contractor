@@ -1,0 +1,200 @@
+.upper
+  background-image: linear-gradient(90deg, #026BD4 0%, #47C2FF 100%)
+  min-height: 354px
+
+  +respond-to($medium)
+    min-height: 340px
+
+  +respond-to($small)
+    min-height: 288px
+
+  +respond-to($xsmall)
+    min-height: auto
+
+.upper--about-us
+  min-height: 432px
+
+  +respond-to($medium)
+    min-height: 408px
+
+  +respond-to($small)
+    min-height: 328px
+
+  +respond-to($xsmall)
+    min-height: 384px
+
+.upper--offers
+  min-height: 430px
+
+  +respond-to($medium)
+    min-height: 520px
+
+  +respond-to($small)
+    min-height: 428px
+
+  +respond-to($xsmall)
+    min-height auto
+
+.upper--partnership
+  min-height: 360px
+
+  +respond-to($medium)
+    min-height: 370px
+
+  +respond-to($small)
+    min-height: 344px
+
+  +respond-to($xsmall)
+    min-height auto
+    height auto
+
+.upper--affiliate
+  min-height: 402px
+
+  +respond-to($medium)
+    min-height: 498px
+
+  +respond-to($small)
+    min-height: 456px
+
+  +respond-to($xsmall)
+    min-height auto
+    height auto
+
+.upper--lender-page
+  min-height: 418px
+
+  +respond-to($medium)
+    min-height: 450px
+
+  +respond-to($small)
+    min-height: 450px
+
+  +respond-to($xsmall)
+    min-height auto
+    height auto
+
+.upper--contact
+  min-height: 404px
+
+  +respond-to($medium)
+    min-height: 404px
+
+  +respond-to($small)
+    min-height: 392px
+
+  +respond-to($xsmall)
+    min-height auto
+    height auto
+
+.upper.upper--refer-earn,
+.upper--subscription
+  min-height: 432px
+
+  +respond-to($medium)
+    min-height: 408px
+
+  +respond-to($small)
+    min-height: 328px
+
+  +respond-to($xsmall)
+    min-height auto
+    height auto
+
+.upper__wrapper
+  @extend .container
+  display: flex
+  justify-content: space-between
+  padding: 64px 0 50px 0
+
+  +respond-to($small)
+    padding-top: 48px
+
+  +respond-to($xsmall)
+    padding: 32px 0 104px 0
+    flex-direction: column
+    align-items: center
+
+.upper__text
+  margin-right 64px
+
+  +respond-to($medium)
+    margin-right 44px
+
+  +respond-to($small)
+    margin-right 24px
+
+  +respond-to($xsmall)
+    width 100%
+    margin-right 0
+    order 2
+    box-sizing border-box
+
+.upper__page-title
+  margin-right: 38px
+  color: #ffffff
+  font-size: 48px
+  letter-spacing: 0.5px
+  line-height: 67px
+  text-shadow: 0 1px 1px rgba(1,100,114,0.29)
+  font-weight: 700
+  +respond-to($small)
+    font-size: 40px
+    line-height: 48px
+    width: 528px
+
+  +respond-to($xsmall)
+    width: 100%
+    margin-right: 0
+    order 2
+    text-align center
+    box-sizing border-box
+
+  .upper__text &
+    margin-bottom 32px
+    margin-right 0
+
+    +respond-to($small)
+      margin-bottom 24px
+
+    +respond-to($xsmall)
+      width 100%
+      box-sizing border-box
+      margin-bottom 16px
+
+.upper__page-text
+  color: #ffffff
+  font-size: 18px
+  line-height: 32px
+  text-shadow: 0 1px 2px rgba(15,85,150,0.10)
+
+  +respond-to($xsmall)
+    width 100%
+    text-align center
+    box-sizing border-box
+
+.upper__img
+  width: 232px
+  height: 232px
+  flex-shrink 0
+
+  +respond-to($small)
+    width: 168px
+    height: 168px
+
+  +respond-to($xsmall)
+    width: 64px
+    height: 64px
+    text-align center
+    margin-bottom: 24px
+
+
+.upper--center
+  .upper__page-title
+    text-align center
+    margin-right 0
+
+    +respond-to($small)
+      width 100%
+      margin-bottom 44px
+

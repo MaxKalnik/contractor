@@ -1,0 +1,64 @@
+.financing
+  border-bottom 1px solid #BAE5F0
+  background #fff
+
+.financing__wrapper
+  @extend .container
+  padding 64px 0
+
+  +respond-to($xsmall)
+    padding 44px 0 32px 0
+
+.financing__under-text
+  @extend .under-text
+  margin 32px 0 48px 0
+
+  +respond-to($small)
+    margin 24px 0 32px 0
+
+  +respond-to($xsmall)
+    margin 16px 0 24px 0
+
+.financing__item-list
+  display flex
+  flex-direction column
+  flex-wrap wrap
+  max-height 110px
+
+  +respond-to($small)
+    max-height 150px
+
+  +respond-to($xsmall)
+    max-height 9999px
+
+.financing__item
+  display flex
+  position relative
+  font-size: 16px
+  color: #525F66
+  text-align: center
+  line-height: 32px
+  font-weight 400
+  padding-left 28px
+  width 50%
+
+  +respond-to($small)
+    width 45%
+    text-align left
+    box-sizing border-box
+
+  +respond-to($xsmall)
+    width 100%
+    box-sizing border-box
+    margin-bottom 8px
+    &:last-child
+      margin-bottom 0
+
+  &:before
+    content ''
+    width 12px
+    height 12px
+    position absolute
+    left 0
+    top 10px
+    background url(images/svg/ic_check.svg) center no-repeat

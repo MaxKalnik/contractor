@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Contractor-Branded-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Contractor_Branded_Page" transform="translate(-415.000000, -440.000000)">
+            <g id="Refine-Results" transform="translate(151.000000, 320.000000)">
+                <g id="Process" transform="translate(264.000000, 116.000000)">
+                    <g id="Group-34">
+                        <g id="ic_1" transform="translate(0.000000, 4.000000)">
+                            <circle id="Oval-2" fill="#4C7B93" cx="8" cy="8" r="8"></circle>
+                            <path d="M9.428,4 L9.428,12.112 L7.568,12.112 C7.77056429,8.54089888 7.77056429,6.45289888 7.568,5.848 C7.36543571,5.24310112 6.78543571,5.59910112 5.828,6.916 L5,5.656 L7.736,4 L9.428,4 Z" id="1" fill="#FFFFFF"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
