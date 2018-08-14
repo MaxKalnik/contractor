@@ -51,18 +51,18 @@ form.form.form--contractor-branded.form--cb-bg(action='', method='POST')
           input.range__slider(data-from="2000", data-max="61000", data-min="1000", data-step="100")
 
       .form__fieldset-input-wrapper.form__fieldset-input-wrapper--offers-income
-        label.form__fieldset-label(for='email')
-          | Contact Email Address
+        label.form__fieldset-label.form__fieldset-label--with-hint(for='annual-income')
+          | Your Annual Income
 
           .form__fieldset-hint-wrapper
             button.form__fieldset-label-hint-btn(type='button')
 
             span.form__fieldset-hint
-              | Some useful information about annual income
+              | Some useful information
 
-        input.form__fieldset-input.form__fieldset-label--with-hint(type='email', id='email' name='email', placeholder='example@mail.com')
-        .form__fieldset-input-warning
-          | Invalid email
+        .range
+          input.form__fieldset-input-range.range__input(name='annual-income')
+          input.range__slider(data-from="60000", data-max="150000", data-min="1000", data-step="1000")
 
 
       .form__fieldset-input-wrapper.form__fieldset-input-wrapper--offers-score
