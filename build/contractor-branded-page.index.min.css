@@ -4100,6 +4100,12 @@ form.form--cb-bg {
 }
 .enahncify-way__show-more {
   position: relative;
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  .enahncify-way__show-more {
+    display: block;
+  }
 }
 .enahncify-way__show-more:before {
   content: '';

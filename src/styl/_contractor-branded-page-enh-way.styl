@@ -61,6 +61,10 @@
 
 .enahncify-way__show-more
   position relative
+  display none
+  +respond-to($xsmall)
+    display block
+
   &:before
     content ''
     width 100%

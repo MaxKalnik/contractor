@@ -3947,6 +3947,17 @@ form.form--cb-bg {
 }
 .offers.offers--cb {
   background: #f5fafc;
+  padding: 50px 0 80px 0;
+}
+@media only screen and (max-width: 1023px) {
+  .offers.offers--cb {
+    padding: 32px 0 64px 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .offers.offers--cb {
+    padding: 8px 0 24px 0;
+  }
 }
 .offers.offers--cb .offers__item {
   padding-left: 44px;
@@ -4114,6 +4125,10 @@ form.form--cb-bg {
     margin-right: 0;
   }
 }
+.offers__item.offers__item--zero .offers__item-btn-container .offers__item-text-under {
+  font-size: 12px;
+  line-height: 16px;
+}
 .offers__item.offers__item--pre-approved .offers__item-text-container {
   box-sizing: border-box;
 }
@@ -4219,6 +4234,50 @@ form.form--cb-bg {
   .offers__item.offers__item--pre-approved .offers__item-logo {
     margin-top: 44px;
     margin-bottom: 0;
+  }
+}
+.offers__items-headers {
+  margin-bottom: 16px;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media only screen and (max-width: 1023px) {
+  .offers__items-headers {
+    display: none;
+  }
+}
+.offers__items-header {
+  font-size: 12px;
+  color: #8fa7b3;
+  letter-spacing: 0;
+  line-height: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.offers__items-header:nth-child(1) {
+  width: 253px;
+}
+.offers__items-header:nth-child(2) {
+  width: 247px;
+}
+.offers__items-header:nth-child(3) {
+  width: 247px;
+}
+.offers__items-header:nth-child(4) {
+  width: auto;
+}
+@media only screen and (max-width: 1439px) {
+  .offers__items-header:nth-child(1) {
+    width: 223px;
+  }
+  .offers__items-header:nth-child(2) {
+    width: 179px;
+  }
+  .offers__items-header:nth-child(3) {
+    width: 187px;
+  }
+  .offers__items-header:nth-child(4) {
+    width: auto;
   }
 }
 .financing-project {

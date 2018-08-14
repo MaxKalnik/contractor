@@ -122,6 +122,13 @@
 
 .offers.offers--cb
   background #F5FAFC
+  padding 50px 0 80px 0
+
+  +respond-to($small)
+    padding 32px 0 64px 0
+
+  +respond-to($xsmall)
+    padding 8px 0 24px 0
 
   .offers__wrapper
     @extend .container
@@ -253,6 +260,11 @@
     +respond-to($small)
       margin-right 0
 
+  .offers__item-btn-container
+    .offers__item-text-under
+      font-size 12px
+      line-height 16px
+
 .offers__item.offers__item--pre-approved
   .offers__item-text-container
     box-sizing border-box
@@ -342,7 +354,45 @@
       margin-top 44px
       margin-bottom 0
 
+.offers__items-headers
+  margin-bottom 16px
+  display flex
 
+  +respond-to($small)
+    display none
+
+.offers__items-header
+  font-size: 12px
+  color: #8FA7B3
+  letter-spacing: 0
+  line-height: 16px
+  font-weight 600
+  text-transform uppercase
+
+  &:nth-child(1)
+    width 253px
+
+  &:nth-child(2)
+    width 247px
+
+  &:nth-child(3)
+    width 247px
+
+  &:nth-child(4)
+    width auto
+
+  +respond-to($medium)
+    &:nth-child(1)
+      width 223px
+
+    &:nth-child(2)
+      width 179px
+
+    &:nth-child(3)
+      width 187px
+
+    &:nth-child(4)
+      width auto
 
 
 
