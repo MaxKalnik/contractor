@@ -1,0 +1,84 @@
+.cb-get-started
+  background #F5FAFC
+  padding 80px 0 90px 0
+
+  +respond-to($medium)
+    padding 80px 0 64px 0
+
+  +respond-to($small)
+    padding 64px 0 64px 0
+
+  +respond-to($xsmall)
+    padding 24px 0 32px 0
+
+.cb-get-started__wrapper
+  @extend .container
+  display flex
+  justify-content space-between
+  padding 44px 24px
+  background #fff
+  box-shadow: 0 23px 28px 0 rgba(0,104,255,0.10)
+  border-radius: 2px
+
+  +respond-to($medium)
+    padding 37px 44px
+
+  +respond-to($small)
+    padding 44px 24px
+
+  +respond-to($xsmall)
+    flex-direction column
+    align-items center
+    justify-content center
+
+.cb-get-started__button
+  @extend .btn-with-lock
+  width 360px
+  padding-top 12px
+  padding-bottom 12px
+
+  +respond-to($xsmall)
+    width 100%
+    padding 12px
+
+.cb-get-started__img
+  width 262px
+  height 292px
+  margin-right 32px
+  flex-shrink 0
+
+  +respond-to($medium)
+    margin-right 68px
+
+  +respond-to($small)
+    margin-right 41px
+
+  +respond-to($xsmall)
+    margin-right 0
+    margin-bottom 24px
+
+.cb-get-started__title
+  position relative
+  font-size: 24px
+  color: #4A4A4A
+  line-height: 32px
+  font-weight 700
+  padding-bottom 24px
+  margin-bottom 24px
+  &:after
+    content ''
+    width 90px
+    height 1px
+    position absolute
+    left 0
+    bottom 0
+    background #4C7B93
+
+.cb-get-started__text
+  font-size: 18px
+  color: #525F66
+  letter-spacing: 0
+  line-height: 32px
+  font-weight 400
+  margin-bottom 32px
+

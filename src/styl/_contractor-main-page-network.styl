@@ -1,0 +1,94 @@
+.join-network
+  background #fff
+
+.join-network__wrapper
+  @extend .container
+  padding 64px 0
+
+  +respond-to($xsmall)
+    padding 44px 0
+
+.join-network__under-text
+  @extend .under-text
+  margin 32px 0 48px 0
+
+  +respond-to($small)
+    margin 24px 0 32px 0
+
+  +respond-to($xsmall)
+    margin 16px 0 24px 0
+
+.join-network__item-icon
+  width 192px
+  height 192px
+  margin-bottom 24px
+
+  +respond-to($small)
+    width 152px
+    height 152px
+
+  +respond-to($xsmall)
+    margin-left auto
+    margin-right auto
+
+.join-network__items-list
+  display flex
+  justify-content space-between
+
+  +respond-to($xsmall)
+    flex-direction column
+
+.join-network__item-header
+  position relative
+  padding-bottom 17px
+  margin-bottom 12px
+  font-weight 600
+
+  +respond-to($xsmall)
+    margin-bottom 16px
+
+  &:after
+    content ''
+    width 90px
+    height 1px
+    position absolute
+    left 0
+    bottom 0
+    background #4C7B93
+
+.join-network__item
+  display flex
+  flex-direction column
+  width 360px
+  border-radius 2px
+  background: #fff
+  padding 30px 32px 26px 32px
+  box-sizing border-box
+  +respond-to($medium)
+    width 296px
+    padding 24px
+
+  +respond-to($small)
+    width 224px
+    padding 24px 16px
+
+  +respond-to($xsmall)
+    width 100%
+    padding 24px
+    margin-bottom 24px
+    box-shadow: 0 23px 28px 0 rgba(0,104,255,0.10)
+    &:last-child
+      margin-bottom 0
+
+  &:nth-child(2)
+    box-shadow: 0 23px 28px 0 rgba(0,104,255,0.10)
+
+.join-network__item-text
+  font-size: 16px
+  color: #525F66
+  letter-spacing: 0
+  line-height: 32px
+  font-weight 400
+
+
+

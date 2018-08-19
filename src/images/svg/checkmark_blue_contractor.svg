@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="12px" viewBox="0 0 11 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>check</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Contractor-Main-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Concractor_Main" transform="translate(-412.000000, -357.000000)">
+            <g id="Main-Title" transform="translate(0.000000, 80.000000)">
+                <g id="Checks" transform="translate(149.000000, 272.000000)">
+                    <g id="Group-23" transform="translate(260.000000, 0.000000)">
+                        <g id="check" transform="translate(0.000000, 3.000000)">
+                            <rect id="BL" opacity="0" x="0" y="0" width="16" height="16"></rect>
+                            <path d="M7.09370324,14 C6.73517328,14 6.39560007,13.8259866 6.17800947,13.5259636 L3.23311855,9.47908134 C2.84986238,8.95361241 2.9495914,8.20526922 3.45565439,7.80666718 C3.96254157,7.40635072 4.68207412,7.51178739 5.06533028,8.03811353 L7.00304049,10.6988893 L11.8749269,2.56226438 C12.2103791,2.00336431 12.919197,1.83192257 13.4582282,2.18080651 C13.9964353,2.52883324 14.1621008,3.26603272 13.8258245,3.82664721 L8.0695641,13.4359567 C7.87010605,13.7711253 7.5247634,13.9802842 7.14645248,13.9982856 C7.12831993,14 7.11183579,14 7.09370324,14 Z" id="Shape" fill="#005871" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

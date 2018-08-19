@@ -290,3 +290,133 @@ $headerNavHeight = 80px
   border: 1px solid transparent
   color: #fff
 
+.header--contractor
+  background: url('images/contractor_main_header.png') bottom no-repeat
+  background-size cover
+  height 600px
+  @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
+    background: url('images/contractor_main_header@2x.png') bottom no-repeat
+    background-size: cover
+
+  +respond-to($medium)
+    background: url('images/contractor_main_header_1024.png') bottom no-repeat
+    height 600px
+    background-size cover
+    @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
+      background: url('images/contractor_main_header_1024@2x.png') bottom no-repeat
+      background-size: cover
+
+  +respond-to($small)
+    background: url('images/contractor_main_header_768.png') bottom no-repeat
+    height 600px
+    background-size cover
+    @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
+      background: url('images/contractor_main_header_768@2x.png') bottom no-repeat
+      background-size: cover
+
+  +respond-to($xsmall)
+    background: url('images/contractor_main_header_768.png') bottom no-repeat
+    min-height 617px
+    height auto
+    background-size cover
+    @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
+      background: url('images/contractor_main_header_768@2x.png') bottom no-repeat
+      background-size: cover
+
+  +respond-to($xxsmall)
+    background: url('images/contractor_main_header_320.png') bottom no-repeat
+    min-height 617px
+    height auto
+    background-size cover
+    @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
+      background: url('images/contractor_main_header_320@2x.png') bottom no-repeat
+      background-size: cover
+
+.header__main--contractor
+  padding 80px 0 160px 0
+  align-items flex-start
+
+  +respond-to($small)
+    padding 62px 0 250px 0
+
+  +respond-to($xxsmall)
+    padding 32px 0 197px 0
+
+.header__title--contractor
+  color #005871
+  font-size 56px
+  line-height 72px
+  text-align left
+  margin-bottom 48px
+
+  +respond-to($small)
+    margin-bottom 32px
+    font-size 40px
+    line-height 56px
+
+  +respond-to($xsmall)
+    margin-bottom 24px
+    font-size 36px
+    line-height 44px
+
+.header__contractor-features
+  display flex
+  margin-bottom 80px
+
+  +respond-to($small)
+    margin-bottom 56px
+
+  +respond-to($xsmall)
+    flex-direction column
+    margin-bottom 32px
+
+.header__contractor-features-item
+  position relative
+  font-size: 16px
+  color: #006682
+  letter-spacing: 0
+  line-height: 24px
+  font-weight 600
+  padding-left 28px
+  text-transform uppercase
+  margin-right 80px
+
+  +respond-to($xsmall)
+    margin-right 0
+    margin-bottom 10px
+    &:last-child
+      margin-bottom 0
+
+  &:last-child
+    margin-right 0
+
+
+  &:before
+    content ''
+    width 12px
+    height 12px
+    position absolute
+    left 0
+    top 5px
+    background url(images/svg/checkmark_blue_contractor.svg) center no-repeat
+
+.header__btn-wrapper--contractor
+  margin-left 0
+  width 360px
+  position relative
+
+  +respond-to($xsmall)
+    width 100%
+    max-width 288px
+
+  img
+    @extend .btn-with-lock-img
+
+    +respond-to($small)
+      left 50%
+      transform translateX(-50%)
+      top auto
+      bottom -165px
+
+    +respond-to($xsmall)
+      bottom -145px

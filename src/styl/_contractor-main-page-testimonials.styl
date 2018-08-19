@@ -1,0 +1,248 @@
+$sliderViewport = 810px
+$sliderViewportMedium = 810px
+$sliderViewportSmall = 632px
+$sliderViewportXsmall = 90vw
+$sliderViewportXXsmall = 90vw
+
+.cb-testimonials
+  padding: 80px 0
+  background: url('images/bg_map.png') center no-repeat
+  background-size: cover
+  @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
+    background: url('images/bg_map@2x.png') center no-repeat
+    background-size: cover
+
+  +respond-to($medium)
+    padding: 80px 0
+    background: url('images/bg_map_1024.png') center no-repeat
+    background-size: cover
+    @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
+      background: url('images/bg_map_1024@2x.png') center no-repeat
+      background-size: cover
+
+  +respond-to($small)
+    padding: 64px 0
+    background: url('images/bg_map_768.png') center no-repeat
+    background-size: cover
+    @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
+      background: url('images/bg_map_768@2x.png') center no-repeat
+      background-size: cover
+
+  +respond-to($xsmall)
+    padding: 34px 0
+
+  +respond-to($xxsmall)
+    background: url('images/bg_map_320.png') center no-repeat
+    background-size: cover
+    @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
+      background: url('images/bg_map_320@2x.png') center no-repeat
+      background-size: cover
+
+.cb-testimonials__wrapper
+  @extend .container
+
+.cb-testimonials__list-wrapper
+  position: relative
+  width: $sliderViewport
+  margin: 0 auto
+  margin-top: 32px
+  +respond-to($medium)
+    width: $sliderViewportMedium
+
+  +respond-to($small)
+    width: $sliderViewportSmall
+
+  +respond-to($xsmall)
+    width: $sliderViewportXsmall
+
+  +respond-to($xsmall-iphone)
+    width: $sliderViewportXXsmall
+
+.cb-testimonials__slides-list-wrapper
+  position: relative
+  width: $sliderViewport
+  overflow: hidden
+  background: #fff
+  box-shadow: 0 23px 28px 0 rgba(0,104,255,0.10)
+  border-radius: 2px
+
+  +respond-to($medium)
+    width: $sliderViewportMedium
+
+  +respond-to($small)
+    width: $sliderViewportSmall
+
+  +respond-to($xsmall)
+    width: $sliderViewportXsmall
+    margin-left: auto
+    margin-right: auto
+
+  +respond-to($xsmall-iphone)
+    width: $sliderViewportXXsmall
+
+.cb-testimonials__slides-list
+  width: $sliderViewport * 3
+  position: relative
+  display: flex
+  flex-direction: row
+  align-items: flex-start
+  transition: .25s
+  overflow: hidden
+
+  +respond-to($medium)
+    width: $sliderViewportMedium * 3
+
+  +respond-to($small)
+    width: $sliderViewportSmall * 3
+
+  +respond-to($xsmall)
+    width: $sliderViewportXsmall * 3
+    margin-left: auto
+    margin-right: auto
+
+  +respond-to($xsmall-iphone)
+    width: $sliderViewportXXsmall * 3
+
+.cb-testimonials__list-item
+  width: $sliderViewport
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  box-sizing: border-box
+  padding 32px
+  box-sizing border-box
+
+  +respond-to($medium)
+    width: $sliderViewportMedium
+
+  +respond-to($small)
+    width: $sliderViewportSmall
+    padding 32px 24px
+
+  +respond-to($xsmall)
+    width: $sliderViewportXsmall
+    margin-left: auto
+    margin-right: auto
+    padding 24px 16px
+
+  +respond-to($xsmall-iphone)
+    width: $sliderViewportXXsmall
+
+.cb-testimonials__list-item-img
+  margin-bottom: 24px
+
+.cb-testimonials__list-item-text
+  width 100%
+  box-sizing border-box
+  font-weight: 400
+  font-size: 18px
+  font-style italic
+  color: #4A4A4A
+  text-align: center
+  line-height: 32px
+  margin-bottom: 32px
+
+.cb-testimonials__list-item-author
+  font-size: 16px
+  line-height: 16px
+  font-weight: 500
+  color: #525F66
+  text-align: center
+  margin-bottom: 12px
+
+.cb-testimonials__pointers
+  display: flex
+  width: 40px
+  box-sizing: border-box
+  margin: 0 auto
+  margin-top 32px
+
+.cb-testimonials__pointers-item
+  width: 8px
+  height: 8px
+  margin-right: 8px
+  box-sizing: border-box
+  border-radius: 50%
+  cursor pointer
+  background #8FA7B3
+  &:last-child
+    margin-right: 0
+
+.cb-testimonials__pointers-item--active
+  background: #17B548
+
+.cb-testimonials__controls-wrapper
+  position absolute
+  bottom 50px
+  width 88px
+  height 242px
+  background #fff
+  border-radius: 2px
+  background: #fff
+  box-shadow: 0 18px 22px 0 rgba(0,104,255,0.10)
+  border-radius: 2px
+
+  +respond-to($small)
+    display none
+
+.cb-testimonials__controls-wrapper--left
+  left -80px
+
+  +respond-to($small)
+    left -50px
+
+.cb-testimonials__controls-wrapper--right
+  right -80px
+
+  +respond-to($small)
+    right -50px
+
+.cb-testimonials__list-controls
+  position: absolute
+  background: none
+  border: none
+  outline: none
+  cursor: pointer
+
+  #control-arrow
+    fill #17B548
+
+  +respond-to($xsmall)
+    display: none
+
+.cb-testimonials__list-controls--inactive
+  #control-arrow
+    fill #8FA7B3
+
+.cb-testimonials__list-controls--left
+  top: 105px
+  left: -100px
+  transform: rotate(180deg)
+
+  +respond-to($medium)
+    left 23px
+
+  +respond-to($small)
+    left 10px
+
+.cb-testimonials__list-controls--right
+  top: 105px
+  right: -100px
+
+  +respond-to($medium)
+    right 23px
+
+  +respond-to($small)
+    right 10px
+
+.cb-testimonials__list-item-author-about
+  font-size: 14px
+  color: #525F66
+  text-align: center
+  line-height: 16px
+  font-weight 400
+
+
+
+

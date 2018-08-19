@@ -1,0 +1,195 @@
+.cb-banners
+  background #F5FAFC
+  border-bottom 1px solid #BAE5F0
+
+.cb-banners__wrapper
+  @extend .container
+  padding 0 0 80px 0
+
+  +respond-to($small)
+    padding 0 0 48px 0
+
+  +respond-to($xsmall)
+    padding 0 0 44px 0
+
+.cb-banners__under-text
+  @extend .under-text
+  margin 32px auto 48px auto
+  max-width 760px
+
+  +respond-to($small)
+    margin 24px auto 32px auto
+
+  +respond-to($xsmall)
+    margin 16px auto 24px auto
+
+.cb-banners__main
+  background: #fff
+  box-shadow: 0 23px 28px 0 rgba(0,104,255,0.10)
+  border-radius: 6px
+  padding 48px 96px 75px 96px
+  margin-bottom 64px
+  position relative
+  top -120px
+
+  +respond-to($medium)
+    padding 48px 32px 48px 32px
+
+  +respond-to($small)
+    margin-bottom 48px
+    padding 32px 24px
+    top -90px
+
+  +respond-to($xsmall)
+    margin-bottom 41px
+    padding 24px 16px 10px 16px
+    top -60px
+
+.cb-banners__instructions
+  position relative
+  margin-top -120px
+
+  +respond-to($small)
+    margin-top -90px
+
+  +respond-to($xsmall)
+    margin-top -60px
+
+.cb-banners__instructions-title
+  font-size: 18px
+  color: #525F66
+  line-height: 32px
+  font-weight 700
+  margin-bottom 32px
+
+  +respond-to($xsmall)
+    margin-bottom 24px
+
+.cb-banners__instructions-list-item,
+.cb-banners__instructions-list-title
+  font-size: 18px
+  color: #525F66
+  line-height: 32px
+  font-weight 400
+
+  +respond-to($xsmall)
+    margin-bottom 24px
+
+.cb-banners__instructions-list
+  margin-bottom 32px
+  &:last-child
+    margin-bottom 0
+
+  +respond-to($xsmall)
+    margin-bottom 24px
+
+.cb-banners__instructions-list-item
+  margin-bottom 4px
+  &:last-child
+    margin-bottom 0
+
+.cb-banners__instructions-list-title
+  margin-bottom 4px
+
+.cb-banners__examples-item
+  &:first-child
+    margin-right 64px
+
+  &:last-child
+    margin-top 32px
+    +respond-to($xsmall)
+      margin-top 0
+
+  +respond-to($xsmall)
+    margin-bottom 32px
+    width 100%
+    display flex
+    flex-direction column
+    align-items center
+    &:last-child
+      margin-bottom 0
+
+.cb-banners__examples-item-btn
+  @extend .green-btn-filled
+  padding 10px
+  width 216px
+
+.cb-banners__examples-wrapper
+  display flex
+  flex-wrap wrap
+  align-items baseline
+  margin-bottom 48px
+
+  +respond-to($small)
+    margin-bottom 32px
+
+  +respond-to($xsmall)
+    flex-direction column
+    margin-bottom 44px
+
+.cb-banners__examples-item-text
+  font-size: 16px
+  color: #4A4A4A
+  line-height: 24px
+  font-weight 600
+  margin-bottom 12px
+
+.cb-banners__examples-item-example
+  background #9B9B9B
+  margin-bottom 24px
+
+  +respond-to($xsmall)
+    margin-bottom 16px
+
+.cb-banners__examples-item-example--sm
+  width 150px
+  height 150px
+
+.cb-banners__examples-item-example--m
+  width 300px
+  height 250px
+
+  +respond-to($xsmall)
+    width 256px
+    height 214px
+
+.cb-banners__examples-item-example--l
+  width 728px
+  height 90px
+
+  +respond-to($small)
+    width 632px
+
+  +respond-to($xsmall)
+    width 100%
+
+.cb-banners__examples-btn
+  @extend .btn-with-lock
+  padding 12px
+  width 360px
+  margin-left auto
+  margin-right auto
+  margin-bottom 12px
+
+  +respond-to($xsmall)
+    width 100%
+
+.cb-banners__examples
+  display flex
+  flex-direction column
+  background: #fff
+  box-shadow: 0 23px 28px 0 rgba(0,104,255,0.10)
+  border-radius: 6px
+  padding 48px
+
+  +respond-to($medium)
+    padding 0
+    box-shadow none
+
+.cb-banners__examples-under-text
+  font-size: 16px
+  color: #525F66
+  letter-spacing: 0
+  text-align: center
+  line-height: 28px
+  font-weight 400

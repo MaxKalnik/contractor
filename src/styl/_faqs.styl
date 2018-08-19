@@ -1,6 +1,10 @@
 .faqs
   background: #f5fafc
 
+  .section--white &
+    background #fff
+    border-bottom 1px solid #DCEFF5
+
 .faqs__wrapper
   @extend .container
   padding: 64px 0 134px 0
@@ -10,6 +14,8 @@
 
   +respond-to($xsmall)
     padding: 32px 0 48px 0
+    .section--white &
+      padding-top 48px
 
 .faqs__title
   font-size: 32px

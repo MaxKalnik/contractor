@@ -468,3 +468,90 @@ $('.enahncify-way__show-more-btn').swipe({
     $('.enahncify-way__content-block').addClass('enahncify-way__content-block--full');
   }
 });
+
+// just hardcoded added contractor testimonials
+if($('.cb-testimonials__slides-list').length) {
+  var index, bullets, $slider, $sliderLength, $left_btn, $right_btn, $sliderWidth, $slideWidth;
+  function initVars() {
+    index = 0;
+    $bullets = $('.cb-testimonials__pointers-item');
+    $slider = $('.cb-testimonials__slides-list');
+    $sliderLength = $('.cb-testimonials__list-item').length;
+    $left_btn = $('.cb-testimonials__list-controls--left');
+    $right_btn = $('.cb-testimonials__list-controls--right');
+    $sliderWidth = $('.cb-testimonials__slides-list').width();
+    $slideWidth = $sliderWidth / $sliderLength;
+    document.querySelector(".cb-testimonials__slides-list").style.transform = "translateX(0)";
+  };
+
+  initVars();
+
+  function checkBullets() {
+    $bullets.removeClass('cb-testimonials__pointers-item--active');
+    $($bullets[index]).addClass('cb-testimonials__pointers-item--active');
+  };
+  checkBullets();
+
+  function checkUI() {
+    if(index > 0 && index < $sliderLength - 1) {
+      $($left_btn).removeClass('cb-testimonials__list-controls--inactive');
+    }
+    else if (index === 0) {
+      $($left_btn).addClass('cb-testimonials__list-controls--inactive');
+      $($right_btn).removeClass('cb-testimonials__list-controls--inactive');
+    }
+    else if(index === $sliderLength - 1) {
+      $($right_btn).addClass('cb-testimonials__list-controls--inactive');
+      $($left_btn).removeClass('cb-testimonials__list-controls--inactive');
+    }
+  };
+
+  function next() {
+    checkUI();
+    if(index === $sliderLength - 1) {
+      var range = 0;
+    } else {
+      var range = $slideWidth + $slideWidth * index;
+    }
+    document.querySelector(".cb-testimonials__slides-list").style.transform = "translateX(-" + range + "px)";
+    if(index === $sliderLength - 1) {
+      index = 0;
+    } else {
+      index++;
+    }
+    checkBullets();
+    checkUI();
+  };
+
+  function prev() {
+    if(index === 0) {
+      var range = -$slideWidth * ($sliderLength - 1);
+    } else {
+      var range = ($slideWidth - $slideWidth * index);
+    }
+    document.querySelector(".cb-testimonials__slides-list").style.transform = "translateX(" + range + "px)";
+    if(index === 0) {
+      index =  $sliderLength - 1;
+    } else {
+      index--;
+    }
+    checkBullets();
+    checkUI();
+  };
+
+  body.on('click', '.cb-testimonials__list-controls--left', function() {
+    prev();
+  });
+  body.on('click', '.cb-testimonials__list-controls--right', function() {
+    next();
+  });
+  body.on('click', '.cb-testimonials__pointers-item', function(evt) {
+    var id = $(this).data('id');
+    document.querySelector(".cb-testimonials__slides-list").style.transform = "translateX(-" + ($slideWidth * (+id)) + "px)";
+    index = id;
+    checkBullets();
+    checkUI();
+  });
+
+  $(window).resize(throttle(initVars, 500, {leading: false}))
+}

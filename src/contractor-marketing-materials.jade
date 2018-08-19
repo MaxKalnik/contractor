@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='shortcut icon', href='/favicon.ico', type='image/x-icon')
+    link(href="https://fonts.googleapis.com/css?family=Roboto:900" rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,500,600,700', rel='stylesheet')
+    link(inline='', rel='stylesheet', type='text/css', href='contractor-marketing-materials.index.min.css')
+    title Enhancify Tools & Marketing Materials
+
+  body
+    header.header.header--short
+      include ./partials/_header-top.jade
+
+    include ./partials/_contractor-marketing-mat-upper.jade
+
+    include ./partials/_contractor-marketing-mat-banners.jade
+    include ./partials/_contractor-marketing-mat-b-cards.jade
+    section.section--white
+        include ./partials/_faqs.jade
+
+    include ./partials/_contractor-marketing-mat-start.jade
+    include ./partials/_footer.jade
+
+    script(type='text/javascript', src='js/script.min.js')

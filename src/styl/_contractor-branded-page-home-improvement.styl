@@ -8,6 +8,9 @@
   +respond-to($xsmall)
     padding 44px 0
 
+.cb-improvement--main
+  border-bottom none
+
 .cb-improvement__wrapper
   @extend .container
   padding-bottom 80px
@@ -45,13 +48,17 @@
       right 50%
       transform translateX(-50%)
 
-.cb-improvementm__btn
+.cb-improvement__btn
   @extend .btn-with-lock
   display: inline-block
-  padding: 12px 76px
+  width 360px
+  padding: 12px
 
   +respond-to($medium)
     padding 12px
 
   +respond-to($small)
     margin-bottom 140px
+
+  +respond-to($xsmall)
+    width 100%

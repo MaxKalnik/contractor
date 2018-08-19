@@ -1,0 +1,27 @@
+include ./_svg-mixins
+
+header.header.header--contractor
+  include ./_header-top.jade
+
+  .header__main.header__main--contractor
+    h1.header__title.header__title--contractor
+      | When your customers need money, Enhancify is the solution.
+
+    .header__contractor-features
+      p.header__contractor-features-item
+        | All Credit Welcome
+
+      p.header__contractor-features-item
+        | Easy
+
+      p.header__contractor-features-item
+        | No Dealer Fees
+
+    .header__btn-wrapper.header__btn-wrapper--contractor
+      a.header__btn
+        +ic_lock_svg
+        | Get Started
+
+      picture
+        source(media='(max-width: 1023px)', srcset="images/loan_amounts_320.png, images/loan_amounts_320@2x.png 2x")
+        img(src="images/loan_amounts.png", srcset="images/loan_amounts@2x.png 2x")

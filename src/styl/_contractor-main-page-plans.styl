@@ -1,0 +1,178 @@
+.contractor-plans
+  background #F5FAFC
+
+.contractor-plans__wrapper
+  @extend .container
+  padding 64px 0
+  display flex
+  flex-direction column
+
+  +respond-to($xsmall)
+    padding 44px 0
+
+.contractor-plans__list
+  display flex
+  justify-content center
+  margin-top 135px
+  margin-bottom 44px
+
+  +respond-to($medium)
+    margin-top 103px
+
+  +respond-to($xsmall)
+    flex-direction column
+    margin-top 24px
+
+.contractor-plans__list-item
+  display flex
+  flex-direction column
+  width 390px
+  margin-right 32px
+  padding 32px 32px 48px 32px
+  box-sizing border-box
+  box-shadow: 0 23px 28px 0 rgba(0,104,255,0.10)
+  background #fff
+  border-radius 2px
+  &:last-child
+    margin-right 0
+
+    +respond-to($xsmall)
+      margin-top 90px
+
+  +respond-to($medium)
+    width 348px
+
+  +respond-to($small)
+    padding 32px 24px 48px 24px
+
+  +respond-to($xsmall)
+    width 100%
+    margin-right 0
+
+.contractor-plans__list-item--save
+  position relative
+  &:before
+    content ''
+    position absolute
+    width 175px
+    height 121px
+    top -83px
+    left -32px
+    background url(images/save.png) center no-repeat
+    background-size contain
+    @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
+      background url(images/save@2x.png) center no-repeat
+      background-size contain
+
+    +respond-to($xsmall)
+      background url(images/save_320.png) center no-repeat
+      background-size contain
+      top -72px
+      left 53px
+      @media (-webkit-min-device-pixel-ratio: 2),( min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx)
+        background url(images/save_320@2x.png) center no-repeat
+        background-size contain
+
+.contractor-plans__item-icon
+  visibility visible
+
+.contractor-plans__item-price
+  display flex
+  flex-direction column
+
+.contractor-plans__item-header
+  display flex
+  flex-direction row
+  justify-content space-between
+  margin-bottom 44px
+  align-items center
+
+.contractor-plans__item-price-value
+  font-size: 48px
+  color: #17B548
+  line-height: 48px
+  font-weight 700
+  margin-bottom 8px
+
+.contractor-plans__item-price-text
+  font-size: 14px
+  color: #8FA7B3
+  font-weight 400
+
+.contractor-plans__item-title
+  position relative
+  font-size: 24px
+  color: #4A4A4A
+  line-height: 32px
+  font-weight 700
+  padding-bottom 24px
+  margin-bottom 24px
+  &:after
+    content ''
+    width 90px
+    height 1px
+    position absolute
+    left 0
+    bottom 0
+    background #4C7B93
+
+.contractor-plans__item-features
+  margin-bottom 32px
+
+.contractor-plans__item-feature
+  position relative
+  font-size: 16px
+  color: #4A4A4A
+  line-height: 36px
+  font-weight 400
+  padding-left 28px
+  &:before
+    content ''
+    width 12px
+    height 12px
+    position absolute
+    left 0
+    top 10px
+    background url(images/svg/ic_check.svg) center no-repeat
+
+.contractor-plans__item-btn
+  @extend .btn-with-lock
+  width 130px
+  padding 12px 20px
+  display inline-block
+  margin-right auto
+  margin-left auto
+
+.contractor-plans__info-text
+  box-sizing border-box
+  position relative
+  font-size: 18px
+  color: #4A4A4A
+  line-height: 36px
+  font-weight 400
+  margin-left auto
+  margin-right auto
+  margin-bottom 8px
+  padding-left 60px
+  box-sizing border-box
+  align-self center
+
+  &:before
+    content ''
+    position absolute
+    top 0
+    left 0
+    width 44px
+    height 44px
+    background url(images/svg/question_green.svg) center no-repeat
+    background-size no-repeat
+
+.contractor-plans__info-text-link
+  @extend .link
+  border-bottom 1px dotted #B3D9F9
+  display inline-block
+  font-weight 500
+
+
+
+

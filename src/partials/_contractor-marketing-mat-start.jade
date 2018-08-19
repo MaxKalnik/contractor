@@ -1,0 +1,21 @@
+include ./_svg-mixins
+
+.cb-improvement.cb-improvement--main
+  .cb-improvement__wrapper
+    h2.section__title
+      | Start closing more deals and increase your revenue today!
+
+    p.cb-improvement__undex-text
+      | Use our program for any product and any service, as little or as much as you like - 
+      span.semibold
+        | NO Dealer Fees
+      | !
+
+    .cb-improvement__btn-wrapper
+      a.cb-improvement__btn
+        +ic_lock_svg
+        | Get Set up in 5 minutes
+
+      picture
+        source(media='(max-width: 1023px)', srcset="images/wont_affect_3_320.png, images/wont_affect_3_320@2x.png 2x")
+        img(src="images/wont_affect.png", srcset="images/wont_affect@2x.png 2x")
