@@ -5,6 +5,8 @@
 .financing__wrapper
   @extend .container
   padding 64px 0
+  display flex
+  flex-direction column
 
   +respond-to($xsmall)
     padding 44px 0 32px 0
@@ -24,6 +26,7 @@
   flex-direction column
   flex-wrap wrap
   max-height 110px
+  overflow hidden
 
   +respond-to($small)
     max-height 150px

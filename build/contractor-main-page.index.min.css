@@ -1051,6 +1051,8 @@ button {
   box-sizing: border-box;
   -ms-flex-item-align: center;
       align-self: center;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 .contractor-plans__info-text:before {
   content: '';
@@ -1191,7 +1193,7 @@ button {
 .cb-steps__step-label {
   position: absolute;
   font-size: 14px;
-  width: 47px;
+  width: 56px;
   color: #538097;
   letter-spacing: 0.78px;
   text-align: center;
@@ -1317,6 +1319,8 @@ button {
   font-weight: 700;
   padding-bottom: 24px;
   margin-bottom: 24px;
+  width: 100%;
+  box-sizing: border-box;
 }
 .cb-get-started__title:after {
   content: '';
@@ -1334,6 +1338,8 @@ button {
   line-height: 32px;
   font-weight: 400;
   margin-bottom: 32px;
+  width: 100%;
+  box-sizing: border-box;
 }
 .cb-testimonials {
   padding: 80px 0;
@@ -1708,6 +1714,9 @@ button {
       align-items: center;
   margin-bottom: 40px;
 }
+.fin-program__item .icon-main {
+  height: 56px;
+}
 @media only screen and (max-width: 767px) {
   .fin-program__item {
     width: 100%;
@@ -1733,6 +1742,10 @@ button {
 .fin-program__plan {
   margin-right: auto;
   margin-left: auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
 }
 .fin-program__plan-title {
   font-size: 24px;
@@ -1752,6 +1765,7 @@ button {
       align-content: space-between;
   max-height: 216px;
   margin: 44px 0 48px 0;
+  overflow: hidden;
 }
 @media only screen and (max-width: 1023px) {
   .fin-program__plan-item-list {
@@ -2648,6 +2662,7 @@ button {
   line-height: 72px;
   text-align: left;
   margin-bottom: 48px;
+  max-width: 946px;
 }
 @media only screen and (max-width: 1023px) {
   .header__title--contractor {

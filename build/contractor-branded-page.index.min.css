@@ -3587,6 +3587,7 @@ form.form--cb-bg {
   line-height: 72px;
   text-align: left;
   margin-bottom: 48px;
+  max-width: 946px;
 }
 @media only screen and (max-width: 1023px) {
   .header__title--contractor {
@@ -4141,6 +4142,10 @@ form.form--cb-bg {
 }
 .financing__wrapper {
   padding: 64px 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
 }
 @media only screen and (max-width: 767px) {
   .financing__wrapper {
@@ -4168,6 +4173,7 @@ form.form--cb-bg {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-height: 110px;
+  overflow: hidden;
 }
 @media only screen and (max-width: 1023px) {
   .financing__item-list {
@@ -4326,7 +4332,7 @@ form.form--cb-bg {
   color: #68ba62;
   line-height: 24px;
   font-weight: 600;
-  padding: 11px 33px;
+  padding: 11px;
   border-radius: 3px;
 }
 @media only screen and (max-width: 767px) {
@@ -4458,7 +4464,7 @@ form.form--cb-bg {
 .cb-steps__step-label {
   position: absolute;
   font-size: 14px;
-  width: 47px;
+  width: 56px;
   color: #538097;
   letter-spacing: 0.78px;
   text-align: center;

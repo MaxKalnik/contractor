@@ -40,6 +40,9 @@
   align-items center
   margin-bottom 40px
 
+  .icon-main
+    height 56px
+
   +respond-to($xsmall)
     width 100%
     margin-bottom 24px
@@ -61,6 +64,8 @@
 .fin-program__plan
   margin-right auto
   margin-left auto
+  display flex
+  flex-direction column
 
 .fin-program__plan-title
   font-size: 24px
@@ -76,6 +81,7 @@
   align-content space-between
   max-height 216px
   margin 44px 0 48px 0
+  overflow hidden
 
   +respond-to($small)
     max-height 248px

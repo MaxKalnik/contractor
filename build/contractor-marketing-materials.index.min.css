@@ -1551,6 +1551,7 @@ button {
   line-height: 72px;
   text-align: left;
   margin-bottom: 48px;
+  max-width: 946px;
 }
 @media only screen and (max-width: 1023px) {
   .header__title--contractor {
@@ -2075,6 +2076,8 @@ button {
 }
 .cb-banners__instructions-list-item {
   margin-bottom: 4px;
+  width: 100%;
+  box-sizing: border-box;
 }
 .cb-banners__instructions-list-item:last-child {
   margin-bottom: 0;
@@ -2103,6 +2106,9 @@ button {
         flex-direction: column;
     -ms-flex-align: center;
         align-items: center;
+  }
+  .cb-banners__examples-item:first-child {
+    margin-right: 0;
   }
   .cb-banners__examples-item:last-child {
     margin-bottom: 0;
@@ -2334,6 +2340,8 @@ button {
   line-height: 32px;
   font-weight: 700;
   margin-bottom: 12px;
+  width: 100%;
+  box-sizing: border-box;
 }
 .cb-cards__order-text {
   font-size: 16px;
@@ -2342,6 +2350,8 @@ button {
   line-height: 32px;
   font-weight: 400;
   margin-bottom: 24px;
+  width: 100%;
+  box-sizing: border-box;
 }
 .cb-cards__order-btn {
   width: 360px;
@@ -2388,12 +2398,18 @@ button {
   text-align: center;
   line-height: 32px;
   font-weight: 400;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
 }
 .cb-cards__promocode-code {
   font-size: 24px;
   color: #4c7b93;
   letter-spacing: 0;
   font-weight: bold;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
 }
 .cb-improvement {
   padding: 80px 0;
