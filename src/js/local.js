@@ -261,7 +261,7 @@ $(".testimonials__slides-list-wrapper").swipe( {
     prev();
   },
    allowPageScroll: "vertical",
-   threshold: 35
+   threshold: 15
 });
 
 // faq accordion
