@@ -1004,7 +1004,7 @@ button {
 .contractor-plans__item-title:after {
   content: '';
   width: 90px;
-  height: 1px;
+  height: 2px;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -1319,13 +1319,13 @@ button {
   font-weight: 700;
   padding-bottom: 24px;
   margin-bottom: 24px;
-  width: 100%;
+  max-width: 100%;
   box-sizing: border-box;
 }
 .cb-get-started__title:after {
   content: '';
   width: 90px;
-  height: 1px;
+  height: 2px;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -1338,7 +1338,7 @@ button {
   line-height: 32px;
   font-weight: 400;
   margin-bottom: 32px;
-  width: 100%;
+  max-width: 100%;
   box-sizing: border-box;
 }
 .cb-testimonials {
