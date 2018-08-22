@@ -252,7 +252,7 @@ $('.main-nav__list-item--hovered').swipe({
   }
 });
 
-$(".testimonials__slides-list-wrapper").swipe( {
+$(".cb-testimonials__list-item").swipe( {
   swipeLeft:function(event, direction, distance, duration, fingerCount, fingerData) {
     next();
   },
@@ -261,7 +261,7 @@ $(".testimonials__slides-list-wrapper").swipe( {
     prev();
   },
    allowPageScroll: "vertical",
-   threshold: 15
+   threshold: 25
 });
 
 // faq accordion
