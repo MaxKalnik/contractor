@@ -1,0 +1,46 @@
+.not-found
+  padding 56px 0
+
+.not-found__wrapper
+  @extend .container
+  display flex
+  flex-direction column
+  align-items center
+
+.not-found__title
+  color: #293033
+  font-size: 48px
+  font-weight: 600
+  line-height: 64px
+  text-align: center
+  text-shadow: 0 1px 0 0 rgba(0,0,0,0)
+  margin-bottom 16px
+
+  +respond-to($small)
+    font-size: 40px
+    line-height: 56px
+
+.not-found__text
+  color: #293033
+  font-size: 18px
+  line-height: 32px
+  text-align: center
+  text-shadow: 0 1px 2px 0 rgba(15,85,150,0.1)
+  font-weight 400
+  margin-bottom 32px
+
+.not-found__btn
+  @extend .green-btn-filled
+  padding 11px
+  min-width 138px
+  box-sizing border-box
+  margin-bottom 32px
+
+.not-found__img
+  height 332px
+  width 520px
+
+  +respond-to($xsmall)
+    width 100%
+    max-width 520px
+    height auto
